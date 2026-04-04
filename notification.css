@@ -1,0 +1,55 @@
+/* NOTIFICATIONS PAGE */
+.notifications-page {
+  padding-bottom: 70px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 8px;
+  border-top: 1px solid #555;
+  position: relative;
+  min-height: 62px;
+}
+
+.notification-item:last-child {
+  border-bottom: 1px solid #555;
+}
+
+.notification-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1px;
+}
+
+.notification-content h3 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: #111;
+}
+
+.notification-content p {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.notification-time {
+  margin-left: auto;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #111;
+  white-space: nowrap;
+  padding-top: 2px;
+}
