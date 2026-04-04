@@ -6,20 +6,31 @@
 
 body {
   font-family: Arial, sans-serif;
+  background: #efefef;
+  color: #111;
 }
 
 .app-container {
+  width: 100%;
   max-width: 375px;
-  margin: auto;
-  border: 1px solid #ccc;
+  margin: 0 auto;
+  background: #fff;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
   min-height: 100vh;
   padding-bottom: 70px;
 }
 
 /* HEADER */
 .top-header {
-  padding: 15px;
+  padding: 14px 16px;
   border-bottom: 1px solid #999;
+  background: #fff;
+}
+
+.top-header h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .section-heading {
@@ -32,11 +43,13 @@ body {
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  width: 375px;
-  background: white;
+  width: 100%;
+  max-width: 375px;
+  background: #fff;
   display: flex;
   justify-content: space-around;
-  padding: 10px 0;
+  align-items: center;
+  padding: 12px 0;
   border-top: 1px solid #999;
 }
 
@@ -44,4 +57,8 @@ body {
   font-size: 22px;
   color: black;
   text-decoration: none;
+}
+
+.nav-icon.active {
+  font-weight: 700;
 }
