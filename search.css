@@ -17,6 +17,7 @@ body {
   padding-bottom: 70px;
 }
 
+/* HEADER */
 .top-header {
   padding: 15px;
   border-bottom: 1px solid #999;
@@ -27,6 +28,7 @@ body {
   font-weight: 700;
 }
 
+/* SEARCH PAGE */
 .search-bar-row {
   padding: 6px 8px;
   border-bottom: 1px solid #999;
