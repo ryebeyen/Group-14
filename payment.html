@@ -40,12 +40,12 @@
         </div>
 
         <div class="payment-form">
-          <input type="text" placeholder="Card number" />
-          <input type="text" placeholder="CVV" />
-          <input type="text" placeholder="Zip code" />
+          <input type="text" id="cardNumber" placeholder="Card number" />
+          <input type="text" id="cvv" placeholder="CVV" />
+          <input type="text" id="zipCode" placeholder="Zip code" />
         </div>
 
-        <button class="confirm-btn">Confirm</button>
+        <button class="confirm-btn" id="confirmBtn" type="button">Confirm</button>
       </section>
 
     </main>
@@ -59,6 +59,14 @@
 
   </div>
 
+  <!-- POPUP BACKDROP -->
+  <div class="popup-backdrop hidden" id="popupBackdrop">
+    <div class="popup-box" id="popupBox">
+      <p id="popupMessage">Please wait a moment...</p>
+      <button class="popup-close hidden" id="popupClose">X</button>
+    </div>
+  </div>
+
   <script>
     const params = new URLSearchParams(window.location.search);
     const amount = params.get("amount");
@@ -67,6 +75,97 @@
     if (amount === "3" || amount === "5" || amount === "10") {
       amountDue.textContent = `$${amount}`;
     }
+
+    const confirmBtn = document.getElementById("confirmBtn");
+    const cardNumber = document.getElementById("cardNumber");
+    const cvv = document.getElementById("cvv");
+    const zipCode = document.getElementById("zipCode");
+
+    const popupBackdrop = document.getElementById("popupBackdrop");
+    const popupBox = document.getElementById("popupBox");
+    const popupMessage = document.getElementById("popupMessage");
+    const popupClose = document.getElementById("popupClose");
+
+    let popupMode = "loading";
+
+    function isOnlyNumbers(value) {
+      return /^\d+$/.test(value);
+    }
+
+    function showPopup(message, mode) {
+      popupMode = mode;
+      popupMessage.innerHTML = message;
+      popupBackdrop.classList.remove("hidden");
+      popupClose.classList.toggle("hidden", mode === "loading");
+
+      popupBox.classList.remove("loading-popup", "error-popup", "success-popup");
+
+      if (mode === "loading") {
+        popupBox.classList.add("loading-popup");
+      } else if (mode === "error") {
+        popupBox.classList.add("error-popup");
+      } else if (mode === "success") {
+        popupBox.classList.add("success-popup");
+      }
+    }
+
+    function hidePopup() {
+      popupBackdrop.classList.add("hidden");
+    }
+
+    function validateInputs() {
+      const cardValue = cardNumber.value.trim();
+      const cvvValue = cvv.value.trim();
+      const zipValue = zipCode.value.trim();
+
+      const cardValid = isOnlyNumbers(cardValue) && cardValue.length === 16;
+      const cvvValid = isOnlyNumbers(cvvValue) && cvvValue.length === 3;
+      const zipValid = isOnlyNumbers(zipValue) && zipValue.length === 5;
+
+      return cardValid && cvvValid && zipValid;
+    }
+
+    function runLoadingThenResult() {
+      const loadingFrames = [
+        "Please wait a moment...",
+        "Please wait a moment...<br><br>—",
+        "Please wait a moment...<br><br>——",
+        "Please wait a moment...<br><br>———",
+        "Please wait a moment...<br><br>————"
+      ];
+
+      let frameIndex = 0;
+      showPopup(loadingFrames[0], "loading");
+
+      const interval = setInterval(() => {
+        frameIndex++;
+        if (frameIndex < loadingFrames.length) {
+          popupMessage.innerHTML = loadingFrames[frameIndex];
+        } else {
+          clearInterval(interval);
+
+          if (validateInputs()) {
+            showPopup("Thank you for your purchase.", "success");
+          } else {
+            showPopup("Sorry please complete the above requirements.", "error");
+          }
+        }
+      }, 200);
+    }
+
+    confirmBtn.addEventListener("click", function () {
+      runLoadingThenResult();
+    });
+
+    popupBackdrop.addEventListener("click", function (e) {
+      if (e.target === popupBackdrop && popupMode !== "loading") {
+        hidePopup();
+      }
+    });
+
+    popupClose.addEventListener("click", function () {
+      hidePopup();
+    });
   </script>
 
 </body>
