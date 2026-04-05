@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="payment.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <div class="app-container">
+
+    <header class="payment-top-bar">
+      <div class="payment-user">
+        <img src="https://via.placeholder.com/52" alt="User avatar" class="payment-user-avatar">
+        <span class="payment-username">User123</span>
+      </div>
+    </header>
+
+    <main class="payment-page">
+
+      <a href="membership.html" class="payment-back-link">
+        <i class="fa-solid fa-arrow-left"></i> Back
+      </a>
+
+      <div class="payment-divider"></div>
+
+      <section class="payment-details">
+        <h2>Payment details</h2>
+
+        <div class="amount-row">
+          <span class="amount-label">Amount due</span>
+          <div class="amount-box" id="amountDue">$3</div>
+        </div>
+
+        <div class="payment-form">
+          <input type="text" placeholder="Card number" />
+          <input type="text" placeholder="CVV" />
+          <input type="text" placeholder="Zip code" />
+        </div>
+
+        <button class="confirm-btn">Confirm</button>
+      </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-icon"><i class="fa-solid fa-house"></i></a>
+      <a href="search.html" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="notifications.html" class="nav-icon"><i class="fa-regular fa-bell"></i></a>
+      <a href="account.html" class="nav-icon active"><i class="fa-regular fa-user"></i></a>
+    </nav>
+
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const amount = params.get("amount");
+    const amountDue = document.getElementById("amountDue");
+
+    if (amount === "3" || amount === "5" || amount === "10") {
+      amountDue.textContent = `$${amount}`;
+    }
+  </script>
+
+</body>
+</html>
