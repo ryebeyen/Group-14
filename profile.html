@@ -16,13 +16,13 @@
   <div class="app-container">
 
     <header class="top-header">
-  <div class="header-row">
-    <a href="search.html" class="back-btn">
-      <i class="fa-solid fa-arrow-left"></i>
-    </a>
-    <h1>Patreon</h1>
-  </div>
-</header>
+      <div class="header-row">
+        <a href="search.html" class="back-btn">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <h1>Patreon</h1>
+      </div>
+    </header>
 
     <main class="profile-page">
       <section class="profile-header">
@@ -30,11 +30,12 @@
 
         <div class="profile-info">
           <img
-            src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=300&q=80"
-            alt="FrameForge"
+            id="profile-avatar"
+            src=""
+            alt="creator"
             class="profile-avatar"
           />
-          <h2>FrameForge</h2>
+          <h2 id="profile-name">FrameForge</h2>
         </div>
 
         <div class="profile-actions">
@@ -51,26 +52,24 @@
 
           <div class="creator-row">
             <img
-              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=100&q=80"
+              id="post-avatar"
+              src=""
               class="avatar"
-              alt="FrameForge avatar"
+              alt="creator avatar"
             />
-            <span>FrameForge</span>
+            <span id="post-name">FrameForge</span>
           </div>
 
           <img
-            src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80"
+            id="post-image"
+            src=""
             class="post-image"
             alt="post image"
           />
 
           <div class="card-content">
-            <h3>How I Shot a Cinematic Short Film Using ONLY Natural Light:</h3>
-            <p>
-              Go behind the scenes of my latest short film and learn how I
-              created a cinematic look using only natural light with simple
-              techniques you can use yourself.
-            </p>
+            <h3 id="post-title"></h3>
+            <p id="post-description"></p>
           </div>
         </div>
 
@@ -98,5 +97,94 @@
     </nav>
 
   </div>
+
+  <script>
+    const creatorData = {
+      frameforge: {
+        name: "FrameForge",
+        avatar: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=300&q=80",
+        postImage: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80",
+        title: "How I Shot a Cinematic Short Film Using ONLY Natural Light:",
+        description: "Go behind the scenes of my latest short film and learn how I created a cinematic look using only natural light with simple techniques you can use yourself."
+      },
+      creator001: {
+        name: "Creator001",
+        avatar: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=300&q=80",
+        postImage: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80",
+        title: "Beginner-Friendly Character Sketch:",
+        description: "Follow along as I break down my full step-by-step process for creating a clean and expressive character sketch from start to finish."
+      },
+      wordhaven: {
+        name: "WordHaven",
+        avatar: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=300&q=80",
+        postImage: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=800&q=80",
+        title: "A Short Piece on Love, Loss, and Letting Go:",
+        description: "A heartfelt short piece exploring the emotions of love, loss, and the quiet strength it takes to let go."
+      },
+      
+      pixelbrew: {
+        name: "PixelBrew",
+        avatar: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=300&q=80",
+        postImage: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80",
+        title: "Turning a 0–5 Game into a Clutch Win:",
+        description: "Watch how I turned a losing match into an insane comeback with clutch plays, smart positioning, and pure last-second pressure."
+      },
+
+      atlascollective: {
+        name: "AtlasCollective",
+        avatar: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=300&q=80",
+        postImage: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=800&q=80",
+        title: "48 Hours in NYC: Hidden Gems:",
+        description: "Explore New York City through my lens as I share underrated spots, local eats, and unique experiences most tourists completely miss."
+      },
+
+      echoverse: {
+        name: "echoverse",
+        avatar: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=300&q=80",
+        postImage: "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=800&q=80",
+        title: "The Night the Sky Went Silent (Episode 1):",
+        description: "The story begins as a quiet town experiences a strange, unexplained silence in the sky, setting off a chain of mysterious events."
+      },
+
+      urbanflux: {
+        name: "Urbanflux",
+        avatar: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=300&q=80",
+        postImage: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+        title: "Street Style Breakdown: What’s Trending:",
+        description: "A look at the latest street wear trends, fits, and styles dominating the city and how to pull them off yourself."
+      },
+
+      motiondistrict: {
+        name: "Motiondistrict",
+        avatar: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=300&q=80",
+        postImage: "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?auto=format&fit=crop&w=800&q=80",
+        title: "5 Cinematic Transitions That Instantly Upgrade Your Edits:",
+        description: "Learn five clean, professional transitions you can use to make your videos look more cinematic and polished instantly."
+      }
+
+
+
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const creatorKey = params.get("creator") || "frameforge";
+    const creator = creatorData[creatorKey] || creatorData.frameforge;
+
+    document.getElementById("profile-avatar").src = creator.avatar;
+    document.getElementById("profile-avatar").alt = creator.name;
+
+    document.getElementById("profile-name").textContent = creator.name;
+
+    document.getElementById("post-avatar").src = creator.avatar;
+    document.getElementById("post-avatar").alt = creator.name + " avatar";
+
+    document.getElementById("post-name").textContent = creator.name;
+
+    document.getElementById("post-image").src = creator.postImage;
+    document.getElementById("post-image").alt = creator.name + " post image";
+
+    document.getElementById("post-title").textContent = creator.title;
+    document.getElementById("post-description").textContent = creator.description;
+  </script>
 </body>
 </html>
