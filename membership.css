@@ -223,7 +223,7 @@ body {
   .app-container{
     max-width: none;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -264,7 +264,7 @@ body {
   }
 
   .membership-tier-card{
-    margin-top: 5%;
+    margin-top: 5rem;
     height: 50%;
     width: 20%;
   }
