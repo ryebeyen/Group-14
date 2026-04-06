@@ -261,7 +261,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: none;
+    padding: 0;
   }
 
   .account-page{
@@ -282,5 +282,9 @@ body {
 
   .profile-picture-preview{
     display: flex;
+  }
+
+  .account-bottom-row{
+    margin-top: auto;
   }
 }
