@@ -1,109 +1,264 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patreon Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patreon Home</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.css" />
 
-  <!-- FONT AWESOME (FIXED) -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+    <!-- FONT AWESOME (FIXED) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
+    <div class="app-container">
+      <!-- DESKTOP HEADER: DEFAULT HIDDEN -->
+      <header class="desktop-header">
+        <span class="desktop-logo"
+          >Patreon <span class="logo-divider">|</span></span
+        >
+        <input type="text" class="desktop-search" placeholder="Search |" />
+        <div class="desktop-header-icons">
+          <div class="icon-placeholder bell">🔔</div>
+          <div class="icon-placeholder me">ME</div>
+        </div>
+      </header>
 
-<div class="app-container">
-
-  <header class="top-header">
-    <h1>Patreon</h1>
-  </header>
-
-  <section class="section-heading">
-    <h2>Latest</h2>
-  </section>
-
-  <main class="feed">
-
-    <!-- CARD 1 -->
-    <div class="post-card">
-      <div class="card-top"></div>
-      <div class="creator-row">
-        <img src="https://via.placeholder.com/30" class="avatar">
-        <span>echoverse</span>
+      <!--DESKTOP FILTER: DEFAULT HIDDEN-->
+      <div class="filter-bar">
+        <button class="filter-btn">All</button>
+        <button class="filter-btn">Gaming</button>
+        <button class="filter-btn">Music</button>
+        <button class="filter-btn">Sports</button>
+        <button class="filter-btn">Anime</button>
+        <button class="filter-btn">Art</button>
+        <button class="filter-btn">Gacha</button>
       </div>
-      <img src="https://images.unsplash.com/photo-1464802686167-b939a6910659" class="post-image">
-      <div class="card-content">
-        <h3>The Night the sky Wet i lis</h3>
-        <p>Join now to watch this exciting action thriller.</p>
-        <span class="see-more">see more →</span>
-      </div>
+
+      <!--MOBILE HEADER: DEFAULT SHOWN-->
+      <header class="top-header">
+        <h1>Patreon</h1>
+      </header>
+
+      <section class="section-heading">
+        <h2>Latest</h2>
+      </section>
+
+      <section class="feed">
+        <!-- CARD 1 -->
+        <div class="post-card">
+          <div class="card-top"></div>
+          <div class="creator-row">
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>echoverse</span>
+          </div>
+          <div class="card-content">
+            <img
+              src="https://images.unsplash.com/photo-1464802686167-b939a6910659"
+              class="post-image"
+            />
+            <h3>This is filler text</h3>
+            <p>Im deciding if i like text on the top or bottom more</p>
+            <div class="card-bottom-row">
+              <div class="like">Like</div>
+              <div class="comment">Comment</div>
+              <div class="see-more">see more →</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- CARD 2 -->
+        <div class="post-card">
+          <div class="card-top"></div>
+          <div class="creator-row">
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>Motiondistrict</span>
+          </div>
+          <div class="card-content">
+            <h3>Edit like a total pro</h3>
+            <p>Learn new techniques to improve your craft.</p>
+            <img
+              src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931"
+              class="post-image"
+            />
+            <div class="card-bottom-row">
+              <div class="like">Like</div>
+              <div class="comment">Comment</div>
+              <div class="see-more">see more →</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- CARD 3 -->
+        <div class="post-card">
+          <div class="card-top"></div>
+          <div class="creator-row">
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>Creator001</span>
+          </div>
+          <div class="card-content">
+            <h3>New ways to improve</h3>
+            <p>Learn new ways to craft engaging characters.</p>
+            <img
+              src="https://images.unsplash.com/photo-1513364776144-60967b0f800f"
+              class="post-image"
+            />
+            <div class="card-bottom-row">
+              <div class="like">Like</div>
+              <div class="comment">Comment</div>
+              <div class="see-more">see more →</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- CARD 4 -->
+        <div class="post-card">
+          <div class="card-top"></div>
+          <div class="creator-row">
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>AtlasCollective</span>
+          </div>
+          <div class="card-content">
+            <h3>48 Hours in NYC</h3>
+            <p>Explore New York’s amazing night life.</p>
+            <img
+              src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2"
+              class="post-image"
+            />
+            <div class="card-bottom-row">
+              <div class="like">Like</div>
+              <div class="comment">Comment</div>
+              <div class="see-more">see more →</div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="feed-extended-section-heading">
+        <h2>New for you</h2>
+      </section>
+    <section class="feed-extended">
+        <!-- ECARD 1 -->
+        <div class="post-card">
+          <div class="card-top"></div>
+          <div class="creator-row">
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>echoverse</span>
+          </div>
+          <div class="card-content">
+            <img
+              src="https://images.unsplash.com/photo-1464802686167-b939a6910659"
+              class="post-image"
+            />
+            <h3>The Night the sky Wet i lis</h3>
+            <p>Join now to watch this exciting action thriller.</p>
+            <div class="card-bottom-row">
+              <div class="like">Like</div>
+              <div class="comment">Comment</div>
+              <div class="see-more">see more →</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- ECARD 2 -->
+        <div class="post-card">
+          <div class="card-top"></div>
+          <div class="creator-row">
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>Motiondistrict</span>
+          </div>
+          <div class="card-content">
+            <h3>Edit like a total pro</h3>
+            <p>Learn new techniques to improve your craft.</p>
+            <img
+              src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931"
+              class="post-image"
+            />
+            <div class="card-bottom-row">
+              <div class="like">Like</div>
+              <div class="comment">Comment</div>
+              <div class="see-more">see more →</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- ECARD 3 -->
+        <div class="post-card">
+          <div class="card-top"></div>
+          <div class="creator-row">
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>Creator001</span>
+          </div>
+          <div class="card-content">
+            <h3>New ways to improve</h3>
+            <p>Learn new ways to craft engaging characters.</p>
+            <img
+              src="https://images.unsplash.com/photo-1513364776144-60967b0f800f"
+              class="post-image"
+            />
+            <div class="card-bottom-row">
+              <div class="like">Like</div>
+              <div class="comment">Comment</div>
+              <div class="see-more">see more →</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- ECARD 4 -->
+        <div class="post-card">
+          <div class="card-top"></div>
+          <div class="creator-row">
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>AtlasCollective</span>
+          </div>
+          <div class="card-content">
+            <h3>48 Hours in NYC</h3>
+            <p>Explore New York’s amazing night life.</p>
+            <img
+              src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2"
+              class="post-image"
+            />
+            <div class="card-bottom-row">
+              <div class="like">Like</div>
+              <div class="comment">Comment</div>
+              <div class="see-more">see more →</div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+      <!-- NAV -->
+      <nav class="bottom-nav">
+        <a href="index.html" class="nav-icon active"
+          ><i class="fa-solid fa-house"></i
+        ></a>
+        <a href="search.html" class="nav-icon"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+        <a href="notifications.html" class="nav-icon"
+          ><i class="fa-regular fa-bell"></i
+        ></a>
+        <a href="account.html" class="nav-icon"
+          ><i class="fa-regular fa-user"></i
+        ></a>
+      </nav>
     </div>
-
-    <div class="divider"></div>
-
-    <!-- CARD 2 -->
-    <div class="post-card">
-      <div class="card-top"></div>
-      <div class="creator-row">
-        <img src="https://via.placeholder.com/30" class="avatar">
-        <span>Motiondistrict</span>
-      </div>
-      <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931" class="post-image">
-      <div class="card-content">
-        <h3>Edit like a total pro</h3>
-        <p>Learn new techniques to improve your craft.</p>
-        <span class="see-more">see more →</span>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- CARD 3 -->
-    <div class="post-card">
-      <div class="card-top"></div>
-      <div class="creator-row">
-        <img src="https://via.placeholder.com/30" class="avatar">
-        <span>Creator001</span>
-      </div>
-      <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f" class="post-image">
-      <div class="card-content">
-        <h3>New ways to improve</h3>
-        <p>Learn new ways to craft engaging characters.</p>
-        <span class="see-more">see more →</span>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- CARD 4 -->
-    <div class="post-card">
-      <div class="card-top"></div>
-      <div class="creator-row">
-        <img src="https://via.placeholder.com/30" class="avatar">
-        <span>AtlasCollective</span>
-      </div>
-      <img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2" class="post-image">
-      <div class="card-content">
-        <h3>48 Hours in NYC</h3>
-        <p>Explore New York’s amazing night life.</p>
-        <span class="see-more">see more →</span>
-      </div>
-    </div>
-
-  </main>
-
-  <!-- NAV -->
-  <nav class="bottom-nav">
-    <a href="index.html" class="nav-icon active"><i class="fa-solid fa-house"></i></a>
-    <a href="search.html" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
-    <a href="notifications.html" class="nav-icon"><i class="fa-regular fa-bell"></i></a>
-    <a href="account.html" class="nav-icon"><i class="fa-regular fa-user"></i></a>
-  </nav>
-
-</div>
-
-</body>
+  </body>
 </html>
