@@ -25,30 +25,35 @@
 
     <main class="payment-page">
 
-      <a href="membership.html" class="payment-back-link">
-        <i class="fa-solid fa-arrow-left"></i> Back
-      </a>
+  <a href="membership.html" class="payment-back-link">
+    <i class="fa-solid fa-arrow-left"></i> Back
+  </a>
 
-      <div class="payment-divider"></div>
+  <div class="payment-divider"></div>
 
-      <section class="payment-details">
-        <h2>Payment details</h2>
+  
+  <section class="payment-details">
+    <h2>Choose payment method</h2>
+    <div class="payment-methods">
+      <button class="payment-method-btn">PayPal</button>
+      <button class="payment-method-btn">Credit Card</button>
+      <button class="payment-method-btn">Apple Pay</button>
+    </div>
+    <div class="amount-row">
+      <span class="amount-label">Amount due</span>
+      <div class="amount-box" id="amountDue">$3</div>
+    </div>
+  </section>
 
-        <div class="amount-row">
-          <span class="amount-label">Amount due</span>
-          <div class="amount-box" id="amountDue">$3</div>
-        </div>
+  
+  <div class="payment-form">
+    <input type="text" id="cardNumber" placeholder="Card number" />
+    <input type="text" id="cvv" placeholder="CVV" />
+    <input type="text" id="zipCode" placeholder="Zip code" />
+    <button class="confirm-btn" id="confirmBtn" type="button">Pay Now</button>
+  </div>
 
-        <div class="payment-form">
-          <input type="text" id="cardNumber" placeholder="Card number" />
-          <input type="text" id="cvv" placeholder="CVV" />
-          <input type="text" id="zipCode" placeholder="Zip code" />
-        </div>
-
-        <button class="confirm-btn" id="confirmBtn" type="button">Confirm</button>
-      </section>
-
-    </main>
+</main>
 
     <nav class="bottom-nav">
       <a href="index.html" class="nav-icon"><i class="fa-solid fa-house"></i></a>
