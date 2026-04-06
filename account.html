@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Account</title>
-
+  <!--
   <link rel="stylesheet" href="style.css">
+  -->
   <link rel="stylesheet" href="account.css" />
   <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -13,6 +14,18 @@
 <body>
 
 <div class="app-container">
+
+  <!--DESKTOP HEADER: DEFAULT HIDDEN-->
+  <header class="desktop-header">
+        <span class="desktop-logo"
+          >Patreon <span class="logo-divider">|</span></span
+        >
+        <input type="text" class="desktop-search" placeholder="Search |" />
+        <div class="desktop-header-icons">
+          <div class="icon-placeholder bell">🔔</div>
+          <div class="icon-placeholder me">ME</div>
+        </div>
+      </header>
 
   <header class="top-header">
     <h1>Patreon</h1>
@@ -23,6 +36,10 @@
     <div class="account-card">
 
       <h2>Account Information</h2>
+
+      <div class="profile-picture-preview">
+        <span class="profile-placeholder">ME</span>
+      </div>
 
       <div class="form-group">
         <label>Username</label>
