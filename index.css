@@ -240,7 +240,7 @@ body {
 /**DESKTOP*/
 @media (min-width: 1400px){
     *{
-        background-color: white;
+        background-color: pink;
     }
 
     .app-container {
