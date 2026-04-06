@@ -152,7 +152,6 @@ body {
 .profile-picture-preview{
   width: 10rem;
   height: 10rem;
-  margin: 3rem 0;
   background-color: black;
   border-radius: 5rem;
   display: none;
