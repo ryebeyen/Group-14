@@ -157,6 +157,7 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .profile-placeholder{
@@ -239,9 +240,7 @@ body {
 }
 
 @media (min-width: 1200px){
-  *{
-    background-color: pink;
-  }
+  
 
   .top-header{
     display: none;
