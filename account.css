@@ -1,3 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #efefef;
+  color: #111;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  background: #fff;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+
+/* HEADER */
+.top-header {
+  padding: 14px 16px;
+  border-bottom: 1px solid #999;
+  background: #fff;
+}
+
+.top-header h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.section-heading {
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid #999;
+}
+
+.desktop-header {
+    display: none;
+    width: 100%;
+    background: #fff;
+    padding: 2rem 24px;
+    align-items: center;
+    gap: 24px;
+    border-bottom: solid 3px black;
+}
+
+.desktop-logo {
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+}
+
+.logo-divider {
+    font-weight: 300;
+    margin-left: 6px;
+    color: #999;
+}
+
+.desktop-search {
+    flex: 1;
+    padding: 10px 16px;
+    border: 1px solid #111;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+    outline: none;
+    background: transparent;
+}
+
+.desktop-search::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.desktop-header-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-placeholder {
+    width: 50px;
+    height: 50px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-placeholder.bell {
+    background: transparent;
+    font-size: 1.5rem;
+    color: #111;
+}
+
+.icon-placeholder.me {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+/* NAV */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 375px;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #999;
+}
+
+.nav-icon {
+  font-size: 22px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-icon.active {
+  font-weight: 700;
+}
+
 /* ACCOUNT */
 .account-page {
   padding: 8px 10px 20px;
@@ -15,6 +147,22 @@
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 50px;
+}
+
+.profile-picture-preview{
+  width: 10rem;
+  height: 10rem;
+  margin: 3rem 0;
+  background-color: black;
+  border-radius: 5rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-placeholder{
+  color: white;
+  font-size: 3rem;
 }
 
 /* FORM */
@@ -91,4 +239,56 @@
   height: 16px;
   background: yellow;
   border-radius: 50%;
+}
+
+@media (min-width: 1200px){
+  *{
+    background-color: pink;
+  }
+
+  .top-header{
+    display: none;
+  }
+
+  .desktop-header{
+    display: flex;
+  }
+
+  .bottom-nav{
+    display: none;
+  }
+
+
+  .app-container{
+    max-width: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: none;
+  }
+
+  .account-page{
+    max-width: none;
+    width: 50%;
+    height: 80vh;
+    margin: 3rem auto auto auto;
+  }
+
+  .account-card{
+    max-width: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .account-card h2{
+    text-align: left;
+  }
+
+  .profile-picture-preview{
+    display: flex;
+  }
+
+  .form-group{
+    margin: 5rem 0;
+  }
 }
