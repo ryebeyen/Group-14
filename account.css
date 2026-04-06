@@ -287,8 +287,4 @@ body {
   .profile-picture-preview{
     display: flex;
   }
-
-  .form-group{
-    margin: 2rem 0;
-  }
 }
