@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patreon Home</title>
-    <!--REVISIT LATER
+    <!--
     <link rel="stylesheet" href="style.css" />
-    -->
+  -->
     <link rel="stylesheet" href="index.css" />
 
     <!-- FONT AWESOME (FIXED) -->
@@ -18,15 +18,19 @@
 
   <body>
     <div class="app-container">
+
       <!-- DESKTOP HEADER: DEFAULT HIDDEN -->
       <header class="desktop-header">
+      <a href="index.html">
         <span class="desktop-logo"
-          >Patreon <span class="logo-divider">|</span></span
-        >
-        <input type="text" class="desktop-search" placeholder="Search |" />
-        <div class="desktop-header-icons">
+          >Patreon <span class="logo-divider">|</span></span>
+            </a>
+            <input type="text" class="desktop-search" placeholder="Search |" />
+            <div class="desktop-header-icons">
           <div class="icon-placeholder bell">🔔</div>
+          <a href="account.html">
           <div class="icon-placeholder me">ME</div>
+          </a>
         </div>
       </header>
 
@@ -39,6 +43,49 @@
         <button class="filter-btn">Anime</button>
         <button class="filter-btn">Art</button>
         <button class="filter-btn">Gacha</button>
+      </div>
+
+      <!--DESKTOP NOTIFICATION: DEFAULT HIDDEN-->
+      <div class="notification-overlay">
+        <div class="notification-label-wrapper">
+          <span class="notification-label">Notifications</span>
+          <span class="notification-date">Date</span>
+        </div>
+        <div class="notification-item">
+          <img src="https://images.unsplash.com/photo-1464802686167-b939a6910659" class="notif-avatar" alt="creator">
+          <div class="notif-text">
+          <span class="notif-name">echoverse</span>
+          <span class="notif-action">Made an announcement</span>
+        </div>
+        <span class="notif-time">Today</span>
+        </div>
+
+        <div class="notification-item">
+          <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931" class="notif-avatar" alt="creator">
+          <div class="notif-text">
+          <span class="notif-name">Motiondistrict</span>
+          <span class="notif-action">Made an announcement</span>
+        </div>
+        <span class="notif-time">Yesterday</span>
+        </div>
+
+        <div class="notification-item">
+          <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f" class="notif-avatar" alt="creator">
+          <div class="notif-text">
+          <span class="notif-name">Creator001</span>
+          <span class="notif-action">Posted</span>
+        </div>
+        <span class="notif-time">Last week</span>
+        </div>
+        
+        <div class="notification-item">
+          <img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2" class="notif-avatar" alt="creator">
+          <div class="notif-text">
+          <span class="notif-name">AtlasCollective</span>
+          <span class="notif-action">Made an annoucement</span>
+        </div>
+        <span class="notif-time">Last week</span>
+        </div>
       </div>
 
       <!--MOBILE HEADER: DEFAULT SHOWN-->
@@ -55,16 +102,16 @@
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img src="https://via.placeholder.com/30" class="avatar" />
-            <span>echoverse</span>
+            <img src="https://images.unsplash.com/photo-1464802686167-b939a6910659" class="avatar" />
+            <a href="profile.html"><span>echoverse</span></a>
           </div>
           <div class="card-content">
             <img
               src="https://images.unsplash.com/photo-1464802686167-b939a6910659"
               class="post-image"
             />
-            <h3>This is filler text</h3>
-            <p>Im deciding if i like text on the top or bottom more</p>
+            <h3>The Night the sky Wet i lis</h3>
+            <p>Join now to watch this exciting action thriller.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -79,16 +126,16 @@
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img src="https://via.placeholder.com/30" class="avatar" />
-            <span>Motiondistrict</span>
+            <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931" class="avatar" />
+            <a href="profile.html"><span>Motiondistrict</span></a>
           </div>
           <div class="card-content">
-            <h3>Edit like a total pro</h3>
-            <p>Learn new techniques to improve your craft.</p>
             <img
               src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931"
               class="post-image"
             />
+            <h3>Edit like a total pro</h3>
+            <p>Learn new techniques to improve your craft.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -103,16 +150,16 @@
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img src="https://via.placeholder.com/30" class="avatar" />
-            <span>Creator001</span>
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f" class="avatar" />
+            <a href="profile.html"><span>Creator001</span></a>
           </div>
           <div class="card-content">
-            <h3>New ways to improve</h3>
-            <p>Learn new ways to craft engaging characters.</p>
             <img
               src="https://images.unsplash.com/photo-1513364776144-60967b0f800f"
               class="post-image"
             />
+            <h3>New ways to improve</h3>
+            <p>Learn new ways to craft engaging characters.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -127,16 +174,16 @@
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img src="https://via.placeholder.com/30" class="avatar" />
-            <span>AtlasCollective</span>
+            <img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2" class="avatar" />
+            <a href="profile.html"><span>AtlasCollective</span></a>
           </div>
           <div class="card-content">
-            <h3>48 Hours in NYC</h3>
-            <p>Explore New York’s amazing night life.</p>
             <img
               src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2"
               class="post-image"
             />
+            <h3>48 Hours in NYC</h3>
+            <p>Explore New York’s amazing night life.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -154,8 +201,8 @@
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img src="https://via.placeholder.com/30" class="avatar" />
-            <span>echoverse</span>
+            <img src="https://images.unsplash.com/photo-1464802686167-b939a6910659" class="avatar" />
+            <a href="profile.html"><span>echoverse</span></a>
           </div>
           <div class="card-content">
             <img
@@ -178,16 +225,16 @@
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img src="https://via.placeholder.com/30" class="avatar" />
-            <span>Motiondistrict</span>
+            <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931" class="avatar" />
+            <a href="profile.html"><span>Motiondistrict</span></a>
           </div>
           <div class="card-content">
-            <h3>Edit like a total pro</h3>
-            <p>Learn new techniques to improve your craft.</p>
             <img
               src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931"
               class="post-image"
             />
+            <h3>Edit like a total pro</h3>
+            <p>Learn new techniques to improve your craft.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -202,16 +249,16 @@
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img src="https://via.placeholder.com/30" class="avatar" />
-            <span>Creator001</span>
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f" class="avatar" />
+            <a href="profile.html"><span>Creator001</span></a>
           </div>
           <div class="card-content">
-            <h3>New ways to improve</h3>
-            <p>Learn new ways to craft engaging characters.</p>
             <img
               src="https://images.unsplash.com/photo-1513364776144-60967b0f800f"
               class="post-image"
             />
+            <h3>New ways to improve</h3>
+            <p>Learn new ways to craft engaging characters.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -226,16 +273,16 @@
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img src="https://via.placeholder.com/30" class="avatar" />
-            <span>AtlasCollective</span>
+            <img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2" class="avatar" />
+            <a href="profile.html"><span>AtlasCollective</span></a>
           </div>
           <div class="card-content">
-            <h3>48 Hours in NYC</h3>
-            <p>Explore New York’s amazing night life.</p>
             <img
               src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2"
               class="post-image"
             />
+            <h3>48 Hours in NYC</h3>
+            <p>Explore New York’s amazing night life.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
