@@ -194,6 +194,15 @@ body {
     padding: 16px 14px 16px;
     margin-bottom: 20px;
   }
+  .membership-tier-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.membership-tier-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  border-color: #111;
+}
   
   .membership-tier-card h2 {
     font-size: 1.05rem;

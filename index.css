@@ -251,6 +251,46 @@ body {
   border-radius: 8px;
   overflow: hidden;
   border: solid 1px black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  /* Slide Animation + stagger effects*/
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.post-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.post-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.post-card:nth-child(5) {
+  animation-delay: 0.3s;
+}
+
+.post-card:nth-child(7) {
+  animation-delay: 0.4s;
+}
+
+.post-card:hover {
+  transform: translateY(-10px) scale(1.025);
+  box-shadow: 
+  0 20px 40px rgba(0, 0, 0, 0.18),
+  0 8px 16px rgba(0, 0, 0, 0.12);
+  border-color: #111;
+}
+.post-card:active {
+  transform: translateY(-1px) scale(0.99);
 }
 
 .card-top {
@@ -370,10 +410,27 @@ body {
 
     /* CARD */
     .post-card {
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
+    border: solid 1px #222222;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
 
+     /*animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s ease forwards;
     }
+
+    .post-card:hover {
+    transform: translateY(-10px) scale(1.025);
+    box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.18),
+    0 8px 16px rgba(0, 0, 0, 0.12);
+    border-color: #111;
+}
+  
 
     .card-top {
     height: 10px;
@@ -435,4 +492,3 @@ body {
       display: block;
     }
 }
-
