@@ -257,6 +257,7 @@ body {
 
 /* CARD */
 .post-card {
+  background-color: white;
   border-radius: 8px;
   overflow: hidden;
   border: solid 1px black;
