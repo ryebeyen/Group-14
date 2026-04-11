@@ -30,7 +30,7 @@ body {
 }
 
 .search-input {
-    flex: 1;        
+    flex: 1;       
     border: none;
     outline: none;
     font-size: 1.5rem;
@@ -59,44 +59,56 @@ body {
     display: none;
     width: 100%;
     background: #fff;
-    padding: 2rem 24px;
-    align-items: center;
+    padding: 0 24px;        
+    align-items: stretch;   
     gap: 24px;
     border-bottom: solid 3px black;
+    justify-content: space-between;
+}
+
+.nav-tab-wrapper{
+  display: flex;
+  align-items: stretch;
+}
+
+.nav-tab {
+    display: flex;
+    align-items: center;    
+    padding: 0 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+.nav-tab:hover{
+  background-color: #aaaaaa;
 }
 
 .desktop-logo {
-    font-size: 1rem;
-    font-weight: 700;
-    white-space: nowrap;
-    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;    
+    padding: 2rem 0;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.nav-tab{
+  font-size: 2rem;
+  margin: 0 2rem;
 }
 
 .logo-divider {
+    font-size: 2rem;
     font-weight: 300;
     margin-left: 6px;
     color: #999;
 }
 
-.desktop-search {
-    flex: 1;
-    padding: 10px 16px;
-    border: 1px solid #111;
-    border-radius: 999px;
-    font-size: 0.9rem;
-    color: rgba(0, 0, 0, 0.5);
-    outline: none;
-    background: transparent;
-}
-
-.desktop-search::placeholder {
-    color: rgba(0, 0, 0, 0.5);
-}
 
 .desktop-header-icons {
     display: flex;
     align-items: center;
-    gap: 12px;
 }
 
 .icon-placeholder {
