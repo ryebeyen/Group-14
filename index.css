@@ -545,6 +545,6 @@ body {
     }
 
     .notification-overlay{
-      display: block;
+      display: none;
     }
 }
