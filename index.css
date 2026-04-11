@@ -20,6 +20,40 @@ body {
   min-height: 100vh;
 }
 
+.search-bar-row {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+    width: 70%;
+    border-bottom: 1px solid #999;
+}
+
+.search-input {
+    flex: 1;        
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #7d7d7d;
+    padding: 10px 8px;
+    background: #ffffff;
+}
+
+.search-submit-btn {
+    background: transparent;
+    border: none;
+    padding: 10px 14px;
+    font-size: 1.3rem;
+    color: #111;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.search-submit-btn:hover {
+    color: #555;
+}
+
 /* DESKTOP HEADER */
 .desktop-header {
     display: none;
