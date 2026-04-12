@@ -17,15 +17,19 @@
 
     <!--DESKTOP HEADER: DEFAULT HIDDEN-->
     <header class="desktop-header">
-      <span class="desktop-logo"
-        >Patreon <span class="logo-divider">|</span></span>
+      <a href="index.html">
+        <span class="desktop-logo"
+          >Patreon <span class="logo-divider">|</span></span>
+      </a>
       <input type="text" class="desktop-search" placeholder="Search |" />
       <div class="desktop-header-icons">
         <div class="icon-placeholder bell">🔔</div>
-        <div class="icon-placeholder me">ME</div>
+        <a href="account.html">
+          <div class="icon-placeholder me">ME</div>
+        </a>
       </div>
     </header>
-
+      
     <header class="top-header">
       <div class="header-row">
         <a href="search.html" class="back-btn">
@@ -40,12 +44,7 @@
         <div class="profile-banner"></div>
 
         <div class="profile-info">
-          <img
-            id="profile-avatar"
-            src=""
-            alt="creator"
-            class="profile-avatar"
-          />
+          <img id="profile-avatar" src="" alt="creator" class="profile-avatar" />
           <h2 id="profile-name">FrameForge</h2>
         </div>
 
@@ -62,21 +61,11 @@
           <div class="card-top"></div>
 
           <div class="creator-row">
-            <img
-              id="post-avatar"
-              src=""
-              class="avatar"
-              alt="creator avatar"
-            />
+            <img id="post-avatar" src="" class="avatar" alt="creator avatar" />
             <span id="post-name">FrameForge</span>
           </div>
 
-          <img
-            id="post-image"
-            src=""
-            class="post-image"
-            alt="post image"
-          />
+          <img id="post-image" src="" class="post-image" alt="post image" />
 
           <div class="card-content">
             <h3 id="post-title"></h3>
@@ -110,6 +99,11 @@
   </div>
 
   <script>
+    // DARK MODE (ONLY ADDITION)
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+
     const creatorData = {
       frameforge: {
         name: "FrameForge",
@@ -174,24 +168,12 @@
     const creator = creatorData[creatorKey] || creatorData.frameforge;
 
     document.getElementById("profile-avatar").src = creator.avatar;
-    document.getElementById("profile-avatar").alt = creator.name;
-
     document.getElementById("profile-name").textContent = creator.name;
-
     document.getElementById("post-avatar").src = creator.avatar;
-    document.getElementById("post-avatar").alt = creator.name + " avatar";
-
     document.getElementById("post-name").textContent = creator.name;
-
     document.getElementById("post-image").src = creator.postImage;
-    document.getElementById("post-image").alt = creator.name + " post image";
-
     document.getElementById("post-title").textContent = creator.title;
     document.getElementById("post-description").textContent = creator.description;
-
-    if (localStorage.getItem("theme") === "dark") {
-      document.body.classList.add("dark-mode");
-    }
   </script>
 </body>
 </html>
