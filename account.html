@@ -20,11 +20,78 @@
     </span>
     <input type="text" class="desktop-search" placeholder="Search |">
     <div class="desktop-header-icons">
-      <div class="icon-placeholder bell">ðŸ””</div>
+<button class="icon-placeholder bell notification-bell-btn" id="desktopBellBtn" type="button" aria-label="Notifications">🔔</button>
       <div class="icon-placeholder me">ME</div>
     </div>
   </header>
 
+<div class="notification-overlay hidden" id="desktopNotificationOverlay">
+  <div class="notification-label-wrapper">
+    <span class="notification-label">Notifications</span>
+    <span class="notification-date">Date</span>
+  </div>
+
+  <a href="profile.html?creator=echoverse" class="notification-link">
+    <div class="notification-item">
+      <img
+        src="https://images.unsplash.com/photo-1464802686167-b939a6910659"
+        class="notif-avatar"
+        alt="creator"
+      />
+      <div class="notif-text">
+        <span class="notif-name">echoverse</span>
+        <span class="notif-action">Made an announcement</span>
+      </div>
+      <span class="notif-time">Today</span>
+    </div>
+  </a>
+
+  <a href="profile.html?creator=motiondistrict" class="notification-link">
+    <div class="notification-item">
+      <img
+        src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931"
+        class="notif-avatar"
+        alt="creator"
+      />
+      <div class="notif-text">
+        <span class="notif-name">Motiondistrict</span>
+        <span class="notif-action">Made an announcement</span>
+      </div>
+      <span class="notif-time">Yesterday</span>
+    </div>
+  </a>
+
+  <a href="profile.html?creator=creator001" class="notification-link">
+    <div class="notification-item">
+      <img
+        src="https://images.unsplash.com/photo-1513364776144-60967b0c78f"
+        class="notif-avatar"
+        alt="creator"
+      />
+      <div class="notif-text">
+        <span class="notif-name">Creator001</span>
+        <span class="notif-action">Posted</span>
+      </div>
+      <span class="notif-time">Last week</span>
+    </div>
+  </a>
+
+  <a href="profile.html?creator=atlascollective" class="notification-link">
+    <div class="notification-item">
+      <img
+        src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2"
+        class="notif-avatar"
+        alt="creator"
+      />
+      <div class="notif-text">
+        <span class="notif-name">AtlasCollective</span>
+        <span class="notif-action">Made an announcement</span>
+      </div>
+      <span class="notif-time">Last week</span>
+    </div>
+  </a>
+</div>
+  
   <!-- TOP HEADER -->
   <header class="top-header">
     <h1>Patreon</h1>
@@ -89,6 +156,8 @@
   </div>
 </div>
 
+<script src="searchbarFunction.js"></script>
+  
 <!-- SCRIPT -->
 <script>
   function showUpdatePopup() {
