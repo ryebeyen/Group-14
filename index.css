@@ -49,7 +49,7 @@ body {
 }
 
 .search-bar-row {
-  display: flex;
+  display: none;
   align-items: center;
   width: 100%;
   border-bottom: 1px solid #999;
@@ -614,5 +614,9 @@ body {
 
   .notification-overlay {
     display: none;
+  }
+
+  .search-bar-row {
+  display: flex;
   }
 }
