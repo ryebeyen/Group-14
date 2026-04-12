@@ -27,6 +27,8 @@ body {
   padding: 14px 16px;
   border-bottom: 1px solid #999;
   background: #fff;
+  text-align: center;
+  box-shadow: 0 5px 5px #999;
 }
 
 .top-header h1 {
