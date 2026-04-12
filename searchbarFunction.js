@@ -17,6 +17,9 @@ const recentResults = document.getElementById("recentResults");
 const suggestionResults = document.getElementById("suggestionResults");
 const cards = document.querySelectorAll(".search-card");
 
+const desktopBellBtn = document.getElementById("desktopBellBtn");
+const desktopNotificationOverlay = document.getElementById("desktopNotificationOverlay");
+
 function buildResultItem(creator, showArrow = false) {
   return `
     <a href="profile.html?creator=${creator.key}" class="overlay-result">
@@ -91,11 +94,29 @@ searchInput.addEventListener("input", function () {
   openOverlay();
 });
 
+if (desktopBellBtn && desktopNotificationOverlay) {
+  desktopBellBtn.addEventListener("click", function (event) {
+    event.stopPropagation();
+    desktopNotificationOverlay.classList.toggle("hidden");
+  });
+}
+
 document.addEventListener("click", function (event) {
   const clickedInsideBar = event.target.closest(".search-bar-row");
   const clickedInsideOverlay = event.target.closest(".search-overlay");
 
+  const clickedInsideBell = event.target.closest("#desktopBellBtn");
+  const clickedInsideNotificationOverlay = event.target.closest("#desktopNotificationOverlay");
+
   if (!clickedInsideBar && !clickedInsideOverlay) {
     closeOverlay();
+  }
+
+  if (
+    desktopNotificationOverlay &&
+    !clickedInsideBell &&
+    !clickedInsideNotificationOverlay
+  ) {
+    desktopNotificationOverlay.classList.add("hidden");
   }
 });
