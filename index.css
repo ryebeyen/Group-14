@@ -213,6 +213,16 @@ body {
   color: #111;
 }
 
+.notification-bell-btn {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.notification-bell-btn:hover {
+  opacity: 0.7;
+}
+
 .icon-placeholder.me {
   color: #fff;
   font-size: 0.85rem;
@@ -247,15 +257,25 @@ body {
 }
 
 .notification-overlay {
-  display: none;
-  border: solid 1px black;
-  width: 500px;
   position: absolute;
-  top: 12%;
-  right: 5%;
+  top: 110px;
+  right: 40px;
+  width: 500px;
+  border: solid 1px black;
   border-radius: 10px;
   box-shadow: 5px 5px 3px grey;
   background-color: white;
+  z-index: 100;
+}
+
+.notification-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.notification-link:hover .notification-item {
+  background: #f3f3f3;
 }
 
 .notification-label-wrapper {
@@ -609,10 +629,6 @@ body {
   }
 
   .divider {
-    display: none;
-  }
-
-  .notification-overlay {
     display: none;
   }
 
