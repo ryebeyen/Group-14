@@ -39,6 +39,8 @@ body {
 .search-input{
   width: 100%;
   border: none;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .search-bar-row h2 {
@@ -87,6 +89,7 @@ body {
   border-radius: 14px;
   display: block;
   margin-bottom: 8px;
+  box-shadow: 0 0 5px #999;
 }
 
 .search-card h4,
