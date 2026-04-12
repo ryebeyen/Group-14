@@ -160,12 +160,14 @@
   
 <!-- SCRIPT -->
 <script>
+  const updatePopup = document.getElementById("updatePopup");
+
   function showUpdatePopup() {
-    document.getElementById("updatePopup").style.display = "flex";
+    updatePopup.style.display = "flex";
   }
 
   function closeUpdatePopup() {
-    document.getElementById("updatePopup").style.display = "none";
+    updatePopup.style.display = "none";
   }
 
   function toggleDarkMode() {
@@ -177,6 +179,12 @@
       localStorage.setItem("theme", "light");
     }
   }
+
+  updatePopup.addEventListener("click", function (event) {
+    if (event.target === updatePopup) {
+      closeUpdatePopup();
+    }
+  });
 
   window.onload = function () {
     if (localStorage.getItem("theme") === "dark") {
