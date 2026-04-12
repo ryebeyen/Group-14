@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patreon Home</title>
+
     <link rel="stylesheet" href="index.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -13,66 +15,19 @@
 
   <body>
     <div class="app-container">
-      <!-- DESKTOP HEADER -->
+      <!-- DESKTOP HEADER: DEFAULT HIDDEN -->
       <header class="desktop-header">
-        <a href="index.html" class="desktop-logo-link">
-          <span class="desktop-logo">
-            Patreon <span class="logo-divider">|</span>
-          </span>
-        </a>
-
-        <div class="nav-tab-wrapper">
-          <div class="nav-tab">Home</div>
-          <div class="nav-tab">Explore</div>
-          <div class="nav-tab">About</div>
-        </div>
-
+        <span class="desktop-logo">
+          Patreon <span class="logo-divider">|</span>
+        </span>
+        <input type="text" class="desktop-search" placeholder="Search |" />
         <div class="desktop-header-icons">
           <div class="icon-placeholder bell">🔔</div>
-          <a href="account.html">
-            <div class="icon-placeholder me">ME</div>
-          </a>
+          <div class="icon-placeholder me">ME</div>
         </div>
       </header>
 
-      <!-- MOBILE HEADER -->
-      <header class="top-header">
-        <h1>Patreon</h1>
-        <a href="search.html" class="header-search-icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </a>
-      </header>
-
-      <!-- SHARED HOME SEARCH AREA -->
-      <div class="home-search-area">
-        <div class="search-bar-row">
-          <input
-            type="text"
-            class="search-input"
-            placeholder="Search |"
-            id="searchInput"
-            autocomplete="off"
-          />
-          <button class="search-submit-btn" type="button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-
-        <div class="search-overlay hidden" id="searchOverlay">
-          <div class="search-overlay-section">
-            <p class="overlay-label">Recent searches</p>
-            <div id="recentResults"></div>
-          </div>
-
-          <div class="overlay-divider"></div>
-
-          <div class="search-overlay-section">
-            <div id="suggestionResults"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- DESKTOP FILTER -->
+      <!-- DESKTOP FILTER: DEFAULT HIDDEN -->
       <div class="filter-bar">
         <button class="filter-btn">All</button>
         <button class="filter-btn">Gaming</button>
@@ -83,87 +38,30 @@
         <button class="filter-btn">Gacha</button>
       </div>
 
-      <!-- DESKTOP NOTIFICATION -->
-      <div class="notification-overlay">
-        <div class="notification-label-wrapper">
-          <span class="notification-label">Notifications</span>
-          <span class="notification-date">Date</span>
-        </div>
-
-        <div class="notification-item">
-          <img
-            src="https://images.unsplash.com/photo-1464802686167-b939a6910659"
-            class="notif-avatar"
-            alt="creator"
-          />
-          <div class="notif-text">
-            <span class="notif-name">echoverse</span>
-            <span class="notif-action">Made an announcement</span>
-          </div>
-          <span class="notif-time">Today</span>
-        </div>
-
-        <div class="notification-item">
-          <img
-            src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931"
-            class="notif-avatar"
-            alt="creator"
-          />
-          <div class="notif-text">
-            <span class="notif-name">Motiondistrict</span>
-            <span class="notif-action">Made an announcement</span>
-          </div>
-          <span class="notif-time">Yesterday</span>
-        </div>
-
-        <div class="notification-item">
-          <img
-            src="https://images.unsplash.com/photo-1513364776144-60967b0f800f"
-            class="notif-avatar"
-            alt="creator"
-          />
-          <div class="notif-text">
-            <span class="notif-name">Creator001</span>
-            <span class="notif-action">Posted</span>
-          </div>
-          <span class="notif-time">Last week</span>
-        </div>
-
-        <div class="notification-item">
-          <img
-            src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2"
-            class="notif-avatar"
-            alt="creator"
-          />
-          <div class="notif-text">
-            <span class="notif-name">AtlasCollective</span>
-            <span class="notif-action">Made an annoucement</span>
-          </div>
-          <span class="notif-time">Last week</span>
-        </div>
-      </div>
+      <!-- MOBILE HEADER: DEFAULT SHOWN -->
+      <header class="top-header">
+        <h1>Patreon</h1>
+      </header>
 
       <section class="section-heading">
         <h2>Latest</h2>
       </section>
 
       <section class="feed">
+        <!-- CARD 1 -->
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img
-              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=300&q=80"
-              class="avatar"
-            />
-            <a href="profile.html?creator=echoverse"><span>echoverse</span></a>
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>echoverse</span>
           </div>
           <div class="card-content">
             <img
               src="https://images.unsplash.com/photo-1464802686167-b939a6910659"
               class="post-image"
             />
-            <h3>The Night the sky Wet i lis</h3>
-            <p>Join now to watch this exciting action thriller.</p>
+            <h3>This is filler text</h3>
+            <p>Im deciding if i like text on the top or bottom more</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -174,24 +72,20 @@
 
         <div class="divider"></div>
 
+        <!-- CARD 2 -->
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img
-              src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=300&q=80"
-              class="avatar"
-            />
-            <a href="profile.html?creator=motiondistrict"
-              ><span>Motiondistrict</span></a
-            >
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>Motiondistrict</span>
           </div>
           <div class="card-content">
+            <h3>Edit like a total pro</h3>
+            <p>Learn new techniques to improve your craft.</p>
             <img
               src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931"
               class="post-image"
             />
-            <h3>Edit like a total pro</h3>
-            <p>Learn new techniques to improve your craft.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -202,24 +96,20 @@
 
         <div class="divider"></div>
 
+        <!-- CARD 3 -->
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img
-              src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=300&q=80"
-              class="avatar"
-            />
-            <a href="profile.html?creator=creator001"
-              ><span>Creator001</span></a
-            >
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>Creator001</span>
           </div>
           <div class="card-content">
+            <h3>New ways to improve</h3>
+            <p>Learn new ways to craft engaging characters.</p>
             <img
               src="https://images.unsplash.com/photo-1513364776144-60967b0f800f"
               class="post-image"
             />
-            <h3>New ways to improve</h3>
-            <p>Learn new ways to craft engaging characters.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -230,24 +120,20 @@
 
         <div class="divider"></div>
 
+        <!-- CARD 4 -->
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img
-              src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=300&q=80"
-              class="avatar"
-            />
-            <a href="profile.html?creator=atlascollective"
-              ><span>AtlasCollective</span></a
-            >
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>AtlasCollective</span>
           </div>
           <div class="card-content">
+            <h3>48 Hours in NYC</h3>
+            <p>Explore New York’s amazing night life.</p>
             <img
               src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2"
               class="post-image"
             />
-            <h3>48 Hours in NYC</h3>
-            <p>Explore New York’s amazing night life.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -262,14 +148,12 @@
       </section>
 
       <section class="feed-extended">
+        <!-- ECARD 1 -->
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img
-              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=300&q=80"
-              class="avatar"
-            />
-            <a href="profile.html?creator=echoverse"><span>echoverse</span></a>
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>echoverse</span>
           </div>
           <div class="card-content">
             <img
@@ -288,24 +172,20 @@
 
         <div class="divider"></div>
 
+        <!-- ECARD 2 -->
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img
-              src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=300&q=80"
-              class="avatar"
-            />
-            <a href="profile.html?creator=motiondistrict"
-              ><span>Motiondistrict</span></a
-            >
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>Motiondistrict</span>
           </div>
           <div class="card-content">
+            <h3>Edit like a total pro</h3>
+            <p>Learn new techniques to improve your craft.</p>
             <img
               src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931"
               class="post-image"
             />
-            <h3>Edit like a total pro</h3>
-            <p>Learn new techniques to improve your craft.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -316,24 +196,20 @@
 
         <div class="divider"></div>
 
+        <!-- ECARD 3 -->
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img
-              src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=300&q=80"
-              class="avatar"
-            />
-            <a href="profile.html?creator=creator001"
-              ><span>Creator001</span></a
-            >
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>Creator001</span>
           </div>
           <div class="card-content">
+            <h3>New ways to improve</h3>
+            <p>Learn new ways to craft engaging characters.</p>
             <img
               src="https://images.unsplash.com/photo-1513364776144-60967b0f800f"
               class="post-image"
             />
-            <h3>New ways to improve</h3>
-            <p>Learn new ways to craft engaging characters.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -344,24 +220,20 @@
 
         <div class="divider"></div>
 
+        <!-- ECARD 4 -->
         <div class="post-card">
           <div class="card-top"></div>
           <div class="creator-row">
-            <img
-              src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=300&q=80"
-              class="avatar"
-            />
-            <a href="profile.html?creator=atlascollective"
-              ><span>AtlasCollective</span></a
-            >
+            <img src="https://via.placeholder.com/30" class="avatar" />
+            <span>AtlasCollective</span>
           </div>
           <div class="card-content">
+            <h3>48 Hours in NYC</h3>
+            <p>Explore New York’s amazing night life.</p>
             <img
               src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2"
               class="post-image"
             />
-            <h3>48 Hours in NYC</h3>
-            <p>Explore New York’s amazing night life.</p>
             <div class="card-bottom-row">
               <div class="like">Like</div>
               <div class="comment">Comment</div>
@@ -371,22 +243,27 @@
         </div>
       </section>
 
+      <!-- NAV -->
       <nav class="bottom-nav">
-        <a href="index.html" class="nav-icon active"
-          ><i class="fa-solid fa-house"></i
-        ></a>
-        <a href="search.html" class="nav-icon"
-          ><i class="fa-solid fa-magnifying-glass"></i
-        ></a>
-        <a href="notifications.html" class="nav-icon"
-          ><i class="fa-regular fa-bell"></i
-        ></a>
-        <a href="account.html" class="nav-icon"
-          ><i class="fa-regular fa-user"></i
-        ></a>
+        <a href="index.html" class="nav-icon active">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="search.html" class="nav-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="notifications.html" class="nav-icon">
+          <i class="fa-regular fa-bell"></i>
+        </a>
+        <a href="account.html" class="nav-icon">
+          <i class="fa-regular fa-user"></i>
+        </a>
       </nav>
     </div>
 
-    <script src="searchbarFunction.js"></script>
+    <script>
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+      }
+    </script>
   </body>
 </html>
