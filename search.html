@@ -29,7 +29,6 @@
     <div class="search-overlay hidden" id="searchOverlay">
       <div class="search-overlay-section">
         <p class="overlay-label">Recent searches</p>
-
         <div id="recentResults"></div>
       </div>
 
@@ -165,6 +164,15 @@
       </a>
     </nav>
   </div>
+
   <script src="searchbarFunction.js"></script>
+
+  <script>
+    window.onload = function () {
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+      }
+    };
+  </script>
 </body>
 </html>
