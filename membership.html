@@ -4,9 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Membership</title>
-  <!--
-  <link rel="stylesheet" href="style.css" />
-  -->
   <link rel="stylesheet" href="membership.css" />
   <link
     rel="stylesheet"
@@ -18,19 +15,16 @@
   <div class="app-container">
 
     <!--DESKTOP HEADER: DEFAULT HIDDEN-->
-      <header class="desktop-header">
-      <a href="index.html">
-        <span class="desktop-logo"
-          >Patreon <span class="logo-divider">|</span></span>
-            </a>
-            <input type="text" class="desktop-search" placeholder="Search |" />
-            <div class="desktop-header-icons">
-          <div class="icon-placeholder bell">🔔</div>
-          <a href="account.html">
-          <div class="icon-placeholder me">ME</div>
-          </a>
-        </div>
-      </header>
+    <header class="desktop-header">
+      <span class="desktop-logo">
+        Patreon <span class="logo-divider">|</span>
+      </span>
+      <input type="text" class="desktop-search" placeholder="Search |" />
+      <div class="desktop-header-icons">
+        <div class="icon-placeholder bell">🔔</div>
+        <div class="icon-placeholder me">ME</div>
+      </div>
+    </header>
 
     <header class="membership-top-bar">
       <div class="membership-user">
@@ -43,6 +37,7 @@
     </header>
 
     <h1 class="support-message">Support your favorite creators!</h1>
+
     <main class="membership-page">
       <section class="membership-tier-card">
         <h2>$3/month</h2>
@@ -73,7 +68,6 @@
           <li>My eternal gratitude</li>
         </ul>
       </section>
-
     </main>
 
     <nav class="bottom-nav">
@@ -84,6 +78,12 @@
     </nav>
 
   </div>
+
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+  </script>
 
 </body>
 </html>
