@@ -1,3 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #efefef;
+  color: #111;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  background: #fff;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  height: 100vh;
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+
+/* HEADER */
+.top-header {
+  padding: 14px 16px;
+  border-bottom: 1px solid #999;
+  background: #fff;
+}
+
+.top-header h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
 /* NOTIFICATIONS PAGE */
 .notifications-page {
   padding-bottom: 70px;
