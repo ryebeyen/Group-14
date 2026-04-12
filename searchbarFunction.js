@@ -84,15 +84,17 @@ function closeOverlay() {
   searchOverlay.classList.add("hidden");
 }
 
-searchInput.addEventListener("focus", function () {
-  openOverlay();
-});
+if (searchInput) {
+  searchInput.addEventListener("focus", function () {
+    openOverlay();
+  });
 
-searchInput.addEventListener("input", function () {
-  renderOverlayResults(searchInput.value);
-  filterCards(searchInput.value);
-  openOverlay();
-});
+  searchInput.addEventListener("input", function () {
+    renderOverlayResults(searchInput.value);
+    filterCards(searchInput.value);
+    openOverlay();
+  });
+}
 
 if (desktopBellBtn && desktopNotificationOverlay) {
   desktopBellBtn.addEventListener("click", function (event) {
