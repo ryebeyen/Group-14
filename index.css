@@ -327,6 +327,7 @@ body {
   text-align: center;
   padding: 8px;
   border-bottom: 1px solid #999;
+  box-shadow: 0px 3px 3px #999;
 }
 
 /* MOBILE NAV */
@@ -340,6 +341,7 @@ body {
   align-items: center;
   padding: 12px 0;
   border-top: 1px solid #999;
+  box-shadow: 0px -3px 3px #999;
 }
 
 .nav-icon {
