@@ -17,19 +17,15 @@
 
     <!--DESKTOP HEADER: DEFAULT HIDDEN-->
     <header class="desktop-header">
-      <a href="index.html">
-        <span class="desktop-logo"
-          >Patreon <span class="logo-divider">|</span></span>
-            </a>
-            <input type="text" class="desktop-search" placeholder="Search |" />
-            <div class="desktop-header-icons">
-          <div class="icon-placeholder bell">🔔</div>
-          <a href="account.html">
-          <div class="icon-placeholder me">ME</div>
-          </a>
-        </div>
-      </header>
-      
+      <span class="desktop-logo"
+        >Patreon <span class="logo-divider">|</span></span>
+      <input type="text" class="desktop-search" placeholder="Search |" />
+      <div class="desktop-header-icons">
+        <div class="icon-placeholder bell">🔔</div>
+        <div class="icon-placeholder me">ME</div>
+      </div>
+    </header>
+
     <header class="top-header">
       <div class="header-row">
         <a href="search.html" class="back-btn">
@@ -136,7 +132,6 @@
         title: "A Short Piece on Love, Loss, and Letting Go:",
         description: "A heartfelt short piece exploring the emotions of love, loss, and the quiet strength it takes to let go."
       },
-      
       pixelbrew: {
         name: "PixelBrew",
         avatar: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=300&q=80",
@@ -144,7 +139,6 @@
         title: "Turning a 0–5 Game into a Clutch Win:",
         description: "Watch how I turned a losing match into an insane comeback with clutch plays, smart positioning, and pure last-second pressure."
       },
-
       atlascollective: {
         name: "AtlasCollective",
         avatar: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=300&q=80",
@@ -152,7 +146,6 @@
         title: "48 Hours in NYC: Hidden Gems:",
         description: "Explore New York City through my lens as I share underrated spots, local eats, and unique experiences most tourists completely miss."
       },
-
       echoverse: {
         name: "echoverse",
         avatar: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=300&q=80",
@@ -160,7 +153,6 @@
         title: "The Night the Sky Went Silent (Episode 1):",
         description: "The story begins as a quiet town experiences a strange, unexplained silence in the sky, setting off a chain of mysterious events."
       },
-
       urbanflux: {
         name: "Urbanflux",
         avatar: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=300&q=80",
@@ -168,7 +160,6 @@
         title: "Street Style Breakdown: What’s Trending:",
         description: "A look at the latest street wear trends, fits, and styles dominating the city and how to pull them off yourself."
       },
-
       motiondistrict: {
         name: "Motiondistrict",
         avatar: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=300&q=80",
@@ -176,9 +167,6 @@
         title: "5 Cinematic Transitions That Instantly Upgrade Your Edits:",
         description: "Learn five clean, professional transitions you can use to make your videos look more cinematic and polished instantly."
       }
-
-
-
     };
 
     const params = new URLSearchParams(window.location.search);
@@ -200,6 +188,10 @@
 
     document.getElementById("post-title").textContent = creator.title;
     document.getElementById("post-description").textContent = creator.description;
+
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+    }
   </script>
 </body>
 </html>
