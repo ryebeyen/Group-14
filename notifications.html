@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notifications</title>
-  <!--
+
   <link rel="stylesheet" href="style.css">
-  -->
   <link rel="stylesheet" href="notifications.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -18,13 +17,10 @@
 
   <header class="top-header">
     <h1>Patreon</h1>
-    <a href="search.html" class="header-search-icon">
-        <i class="fa-solid fa-magnifying-glass"></i>
-    </a>
   </header>
 
   <main class="notifications-page">
-    <a href="profile.html">
+
     <div class="notification-item">
       <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=300&q=80" class="notification-avatar" alt="FrameForge">
       <div class="notification-content">
@@ -33,7 +29,6 @@
       </div>
       <span class="notification-time">Today</span>
     </div>
-    </a>
 
     <div class="notification-item">
       <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=300&q=80" class="notification-avatar" alt="PixelBrew">
@@ -135,3 +130,12 @@
   </nav>
 
 </div>
+
+<script>
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+</script>
+
+</body>
+</html>
