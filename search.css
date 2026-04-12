@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: purple;
 }
 
 body {
@@ -34,6 +33,12 @@ body {
 .search-bar-row {
   padding: 6px 8px;
   border-bottom: 1px solid #999;
+  width: 100%;
+}
+
+.search-input{
+  width: 100%;
+  border: none;
 }
 
 .search-bar-row h2 {
