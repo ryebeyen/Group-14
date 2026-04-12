@@ -210,6 +210,7 @@ body {
   background: #9d9d9d;
   color: white;
   font-weight: bold;
+  box-shadow: 5px 5px 5px #999;
 }
 
 /* TOGGLE */
@@ -234,6 +235,7 @@ body {
   display: flex;
   align-items: center;
   padding: 2px;
+  box-shadow: 5px 5px 5px #999;
 }
 
 .toggle-circle {
