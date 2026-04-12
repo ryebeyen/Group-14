@@ -4,56 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Account</title>
-  <!--
-  <link rel="stylesheet" href="style.css">
-  -->
-  <link rel="stylesheet" href="account.css" />
-  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="account.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <div class="app-container">
 
-  <!--DESKTOP HEADER: DEFAULT HIDDEN-->
+  <!-- DESKTOP HEADER -->
   <header class="desktop-header">
-    <a href="index.html">
-      <span class="desktop-logo">
-        Patreon <span class="logo-divider">|</span>
-      </span>
-    </a>
-  
-    <div class="desktop-search-wrapper">
-      <input
-        type="text"
-        class="desktop-search"
-        id="desktopSearchInput"
-        placeholder="Search |"
-        autocomplete="off"
-      />
-  
-      <div class="desktop-search-overlay hidden" id="desktopSearchOverlay">
-        <div class="search-overlay-section">
-          <p class="overlay-label">Recent searches</p>
-          <div id="desktopRecentResults"></div>
-        </div>
-  
-        <div class="overlay-divider"></div>
-  
-        <div class="search-overlay-section">
-          <div id="desktopSuggestionResults"></div>
-        </div>
-      </div>
-    </div>
-  
+    <span class="desktop-logo">
+      Patreon <span class="logo-divider">|</span>
+    </span>
+    <input type="text" class="desktop-search" placeholder="Search |">
     <div class="desktop-header-icons">
       <div class="icon-placeholder bell">🔔</div>
-      <a href="account.html">
-        <div class="icon-placeholder me">ME</div>
-      </a>
+      <div class="icon-placeholder me">ME</div>
     </div>
   </header>
 
+  <!-- TOP HEADER -->
+  <header class="top-header">
+    <h1>Patreon</h1>
+  </header>
+
+  <!-- MAIN -->
   <main class="account-page">
 
     <div class="account-card">
@@ -65,26 +42,26 @@
       </div>
 
       <div class="form-group">
-        <label>Update username</label>
+        <label>Username</label>
         <input type="text" placeholder="Enter Username">
       </div>
 
       <div class="form-group">
-        <label>Update email</label>
+        <label>Email</label>
         <input type="text" placeholder="Enter Email">
       </div>
 
       <div class="form-group">
-        <label>Update password</label>
+        <label>New Password</label>
         <input type="text" placeholder="Enter Password">
       </div>
 
       <div class="account-bottom-row">
-        <button class="save-btn">Save</button>
+        <button class="save-btn" onclick="showUpdatePopup()">Save</button>
 
         <div class="theme-box">
           <span class="theme-label">Color theme</span>
-          <div class="theme-toggle">
+          <div class="theme-toggle" onclick="toggleDarkMode()">
             <div class="toggle-circle"></div>
           </div>
         </div>
@@ -94,6 +71,7 @@
 
   </main>
 
+  <!-- NAV -->
   <nav class="bottom-nav">
     <a href="index.html" class="nav-icon"><i class="fa-solid fa-house"></i></a>
     <a href="search.html" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -102,6 +80,41 @@
   </nav>
 
 </div>
-<script src="searchbarFunction.js"></script>
+
+<!-- POPUP -->
+<div id="updatePopup" class="update-popup-overlay">
+  <div class="update-popup-box">
+    <button class="update-popup-close" onclick="closeUpdatePopup()">×</button>
+    <div class="update-popup-message">Update complete</div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+  function showUpdatePopup() {
+    document.getElementById("updatePopup").style.display = "flex";
+  }
+
+  function closeUpdatePopup() {
+    document.getElementById("updatePopup").style.display = "none";
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  }
+
+  window.onload = function () {
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+  };
+</script>
+
 </body>
 </html>
