@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profile</title>
-  <!--
+
   <link rel="stylesheet" href="style.css" />
-  -->
   <link rel="stylesheet" href="profile.css" />
   <link
     rel="stylesheet"
@@ -23,8 +22,13 @@
           >Patreon <span class="logo-divider">|</span></span>
       </a>
       <div class="desktop-search-wrapper">
-        <input type="text" class="desktop-search" placeholder="Search |" autocomplete="off" />
-    </div>
+  <input
+    type="text"
+    class="desktop-search"
+    id="desktopSearchInput"
+    placeholder="Search |"
+    autocomplete="off"
+  />
 
   <div class="desktop-search-overlay hidden" id="desktopSearchOverlay">
     <div class="search-overlay-section">
@@ -39,19 +43,12 @@
     </div>
   </div>
 </div>
-      
-      <div class="nav-tab-wrapper">
-        <div class="nav-tab">Home</div>
-        <div class="nav-tab">Explore</div>
-        <div class="nav-tab">About</div>
-    </div>
-
-    <div class="desktop-header-icons">
+      <div class="desktop-header-icons">
         <div class="icon-placeholder bell">🔔</div>
         <a href="account.html">
-            <div class="icon-placeholder me">ME</div>
+          <div class="icon-placeholder me">ME</div>
         </a>
-    </div>
+      </div>
     </header>
       
     <header class="top-header">
@@ -85,21 +82,11 @@
           <div class="card-top"></div>
 
           <div class="creator-row">
-            <img
-              id="post-avatar"
-              src=""
-              class="avatar"
-              alt="creator avatar"
-            />
+            <img id="post-avatar" src="" class="avatar" alt="creator avatar" />
             <span id="post-name">FrameForge</span>
           </div>
 
-          <img
-            id="post-image"
-            src=""
-            class="post-image"
-            alt="post image"
-          />
+          <img id="post-image" src="" class="post-image" alt="post image" />
 
           <div class="card-content">
             <h3 id="post-title"></h3>
