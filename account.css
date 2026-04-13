@@ -51,6 +51,11 @@ body {
     border-bottom: solid 3px black;
 }
 
+.desktop-logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .desktop-logo {
     font-size: 1rem;
     font-weight: 700;
