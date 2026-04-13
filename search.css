@@ -379,3 +379,59 @@ body.dark-mode .search-section,
 body.dark-mode .popular-week-section {
   background: #121212;
 }
+
+@media (min-width: 1200px) {
+
+  .app-container {
+    max-width: none;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .desktop-header{
+    display: flex;
+  }
+
+  .top-header {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: none;
+  }
+
+  .search-bar-row {
+    display: none;
+  }
+
+  .search-overlay {
+    display: none;
+  }
+
+  .search-page {
+    padding: 40px 80px;
+  }
+
+  .search-section {
+    padding: 0 0 40px 0;
+  }
+
+  .search-section-title {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+  }
+
+  .search-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .search-card-image {
+    height: 180px;
+  }
+
+  .popular-week-section {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
