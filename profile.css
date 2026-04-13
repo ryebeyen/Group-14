@@ -59,6 +59,44 @@ body {
   overflow: hidden;
 }
 
+.search-overlay-section {
+  padding: 12px 0;
+}
+
+.overlay-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #111;
+  padding: 0 10px 12px;
+}
+
+.overlay-divider {
+  height: 1px;
+  background: #999;
+}
+
+.overlay-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #111;
+  font-size: 0.98rem;
+  font-weight: 700;
+  padding: 14px 10px;
+}
+
+.overlay-arrow {
+  font-size: 1rem;
+}
+
+.no-results {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #666;
+  padding: 14px 10px;
+}
+
 .desktop-search {
     flex: 1;
     padding: 10px 16px;
