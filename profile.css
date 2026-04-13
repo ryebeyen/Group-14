@@ -22,10 +22,11 @@ body {
     display: none;
     width: 100%;
     background: #fff;
-    padding: 2rem 24px;
-    align-items: center;
+    padding: 0 24px;        
+    align-items: stretch;   
     gap: 24px;
     border-bottom: solid 3px black;
+    justify-content: space-between;
 }
 
 .desktop-logo {
