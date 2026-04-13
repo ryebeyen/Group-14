@@ -12,33 +12,70 @@
 </head>
 <body>
   <div class="app-container">
-    <header class="top-header">
-      <h1>Patreon</h1>
-    </header>
 
+    <div class="app-container">
+
+  <!-- DESKTOP HEADER -->
+  <header class="desktop-header">
+    <a href="index.html" class="desktop-logo-link">
+      <span class="desktop-logo">
+        Patreon <span class="logo-divider">|</span>
+      </span>
+    </a>
+    <div class="nav-tab-wrapper">
+      <a href="index.html"><div class="nav-tab">Home</div></a>
+      <a href="search.html"><div class="nav-tab">Explore</div></a>
+      <div class="nav-tab">About</div>
+    </div>
+    <div class="desktop-header-icons">
+      <button class="icon-placeholder bell notification-bell-btn" id="desktopBellBtn" type="button" aria-label="Notifications">🔔</button>
+      <a href="account.html">
+        <div class="icon-placeholder me">ME</div>
+      </a>
+    </div>
+  </header>
+
+  <!-- MOBILE HEADER -->
+  <header class="top-header">
+    <h1>Patreon</h1>
+  </header>
+
+  <!-- SHARED HOME SEARCH AREA -->
+  <div class="home-search-area">
     <div class="search-bar-row">
       <input
         type="text"
-        id="searchInput"
         class="search-input"
-        placeholder="🔍Search"
+        placeholder="Search |"
+        id="searchInput"
         autocomplete="off"
       />
+      <button class="search-submit-btn" type="button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
     </div>
-
     <div class="search-overlay hidden" id="searchOverlay">
       <div class="search-overlay-section">
         <p class="overlay-label">Recent searches</p>
         <div id="recentResults"></div>
       </div>
-
       <div class="overlay-divider"></div>
-
       <div class="search-overlay-section">
         <div id="suggestionResults"></div>
       </div>
     </div>
+  </div>
 
+  <!-- DESKTOP FILTER -->
+  <div class="filter-bar">
+    <button class="filter-btn">All</button>
+    <button class="filter-btn">Gaming</button>
+    <button class="filter-btn">Music</button>
+    <button class="filter-btn">Sports</button>
+    <button class="filter-btn">Anime</button>
+    <button class="filter-btn">Art</button>
+    <button class="filter-btn">Gacha</button>
+  </div>
     <main class="search-page">
       <section class="search-section">
         <h3 class="search-section-title">New for you &gt;</h3>
