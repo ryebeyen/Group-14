@@ -404,6 +404,10 @@ body.dark-mode .popular-week-section {
     display: flex;
   }
 
+  .search-input{
+    display: flex;
+  }
+
   .top-header {
     display: none;
   }
