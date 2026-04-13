@@ -15,19 +15,16 @@
 .payment-user {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.payment-user-avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  object-fit: cover;
-  background: #fff;
+  justifu-content: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  background-color: black;
 }
 
 .payment-username {
   font-size: 0.95rem;
+  color: white;
   font-weight: 700;
   color: #000;
 }
