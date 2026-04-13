@@ -203,26 +203,6 @@ body {
   color: #7d7d7d;
 }
 
-/*NAV TABS*/
-.nav-tab-wrapper{
-  display: flex;
-  align-items: stretch;
-}
-
-.nav-tab {
-    display: flex;
-    align-items: center;    
-    padding: 0 16px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
-    white-space: nowrap;
-}
-
-.nav-tab:hover{
-  background-color: #aaaaaa;
-}
-
 /* SEARCH PAGE */
 .search-page {
   padding-bottom: 70px;
