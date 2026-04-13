@@ -551,13 +551,12 @@ body {
     display: flex;
   }
 
-  .feed,
-  .feed-extended {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 7rem;
-    padding: 3.5rem 10rem;
-  }
+  .feed, .feed-extended{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem; 
+      padding: 3.5rem 10rem;
+    }
 
   .post-card {
     border-radius: 12px;
