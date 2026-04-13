@@ -423,6 +423,10 @@ body {
   cursor: pointer;
 }
 
+.profile-btn:hover{
+  box-shadow: 0 0 5px #999;
+}
+
 .profile-divider {
   height: 1px;
   background: #666;
