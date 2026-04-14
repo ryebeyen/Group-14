@@ -1,0 +1,9 @@
+:root {
+  --primary: #ffffff; 
+  --secondary: #000000;
+}
+
+body.dark-mode {
+  --primary: #000000;
+  --secondary: #ffffff; 
+}
