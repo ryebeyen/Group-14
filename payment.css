@@ -15,7 +15,7 @@
 .payment-user {
   display: flex;
   align-items: center;
-  justifu-content: center;
+  justify-content: center;
   height: 80px;
   width: 80px;
   border-radius: 40px;
@@ -153,8 +153,9 @@
 }
 
 .success-popup {
-  background: #d7d7d7;
-  color: #111;
+  background: linear-gradient(135deg, #28a745, #4cd964);
+  color: white;
+  border-color: #1e7e34;
 }
 
 .popup-close {
@@ -170,6 +171,26 @@
 
 .hidden {
   display: none;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+input.invalid {
+  border: 2px solid red;
+}
+
+input.valid {
+  border: 2px solid green;
 }
 
 @media (min-width: 1200px) {
@@ -259,6 +280,7 @@
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
+    transition: 0.2s ease;
   }
 
   .amount-row {
@@ -553,9 +575,10 @@
 }
 
 .success-popup {
-  background: #d7d7d7;
-  color: #111;
-}
+  background: linear-gradient(135deg, #28a745, #4cd964);
+  color: white;
+  border-color: #1e7e34;
+ }
 
 .popup-close {
   position: absolute;
@@ -658,6 +681,13 @@
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
+  }
+
+  .payment-method-btn.selected {
+  background: #111;
+  color: #fff;  
+  outline: 3px solid #111;
+  transform: scale(1.03);
   }
 
   .amount-row {
