@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*WEBSITE CONTAINER*/
 .website-container{
     min-height: 100vh;
     width: 700px;
-    background-color: rgba(var(--primary));
+    background: linear-gradient(
+    to bottom right,
+    rgb(220, 216, 209),
+    rgb(198, 194, 186),
+    rgb(174, 169, 160)
+    );
 }
 
 .mobile-header {
@@ -153,7 +162,7 @@
     bottom: 0;
     left: 50%;
     font-size: 3vh;
-    transform: translate(-50%, 300%);
+    transform: translate(-50%, 350%);
 }
 
 .subscribe-btn {
@@ -195,7 +204,7 @@
 .membership-btn:hover, .subscribe-btn:hover {
     transform: translateY(-5px);
     scale: 1.15;
-    box-shadow: 5px 5px 5px rgb(140,140,104);
+    box-shadow: 5px 5px 5px rgb(140,140,140);
 }
 
 
@@ -210,7 +219,8 @@
 .post-card {
   border-radius: 14px;
   overflow: hidden;
-  background-image: linear-gradient(to bottom right, rgba(140,140,140,.7), transparent);
+  background-image: linear-gradient(to bottom right, rgba(141, 141, 141, 0.7), rgb(195,195,195
+  ));
   margin-bottom: 18px;
   box-shadow: 5px 5px 5px rgb(140,140,140);
 }
@@ -265,7 +275,7 @@
 }
 
 .membership-box {
-  background-image: linear-gradient(to bottom right, rgba(140,140,140,.7), transparent);
+background-image: linear-gradient(to bottom right, rgba(141, 141, 141, 0.7), rgb(195,195,195));  
   border-radius: 14px;
   padding: 12px;
   display: flex;
@@ -328,6 +338,16 @@
 @media (min-width: 800px) {
     .website-container {
         width: 100vw;
+    }
+
+    .profile-posts {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        gap: 20px;
+    }
+    
+    .membership-box {
+        grid-area: 2 / 2;
     }
 
     .post-card, .membership-box {
