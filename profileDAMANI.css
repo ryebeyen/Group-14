@@ -207,6 +207,10 @@ body {
     box-shadow: 5px 5px 5px rgb(140,140,140);
 }
 
+.membership-btn:visited {
+    background-color: greenyellow;
+}
+
 
 .profile-posts {
    display: grid;

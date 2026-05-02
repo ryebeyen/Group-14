@@ -161,7 +161,7 @@ body {
     bottom: 0;
     left: 50%;
     font-size: 3vh;
-    transform: translate(-50%, 300%);
+    transform: translate(-50%, 350%);
 }
 
 .support-message {
@@ -179,6 +179,10 @@ body {
     bottom: 0;
     transform: translateY(200%);
     text-decoration: underline;
+}
+
+.return-btn:visited{
+    color: rgb(var(--secondary));
 }
 
 .membership-grid {

@@ -4,12 +4,21 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*WEBSITE CONTAINER*/
 .website-container{
     min-height: 100vh;
     width: 700px;
     border: 1px solid black;
-    background-color: rgb(var(--primary));
+    background: linear-gradient(
+    to bottom right,
+    rgb(220, 216, 209),
+    rgb(198, 194, 186),
+    rgb(174, 169, 160)
+    );
 }
 
 .header-filter-wrapper {
@@ -219,11 +228,13 @@
 .card-title {
     color: rgb(var(--secondary));
     margin: 5px 10px;
+    font-size: 1.25rem;
 }
 
 .card-genere {
     color: rgb(var(--secondary));
     margin: 5px 10px;
+    font-size: 1rem;
 }
 
 /*FOOTER*/
