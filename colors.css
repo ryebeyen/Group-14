@@ -1,9 +1,9 @@
 :root {
-  --primary: #ffffff; 
-  --secondary: #000000;
+  --primary: 255,255,255; 
+  --secondary: 0,0,0;
 }
 
 body.dark-mode {
-  --primary: #000000;
-  --secondary: #ffffff; 
+  --primary: 0,0,0;
+  --secondary: 255,255,255; 
 }

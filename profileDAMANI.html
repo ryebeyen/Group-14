@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="profileDAMANI.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <div class="website-container">
+        <div class="mobile-header">
+            <div class="dark-mode-toggle">
+                <div class="dark-mode-switch"></div>
+            </div>
+            <a href="" class="mobile-home-btn">Home</a>
+            <a href="searchDAMANI.html" class="mobile-explore-btn">Explore</a>
+            <a href="about.html" class="mobile-about-btn">About</a>
+            <div class="mobile-search-wrapper">
+                <button class="mobile-search-submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input type="text" class="mobile-search" placeholder="find a creator" />
+            </div>
+            <a href="accountDAMANI.html" class="mobile-account-btn">My account</a>
+        </div>
+
+        <main class="website-home">
+            <div class="profile-header">
+                <div class="profile-banner">
+                    <div class="image-wrapper">
+                        <img class="profile-image" src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80"/>
+                    </div>
+                    <span class="account-name">Frame Forge</span>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+                <a class="membership-btn">Join Membership</a>
+            </div>
+
+            <section class="profile-posts">
+                <div class="post-card">
+
+                    <div class="creator-row">
+                        <img id="post-avatar" src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" class="avatar" alt="creator avatar" />
+                        <span class="post-name">FrameForge</span>
+                    </div>
+                    <img id="post-image" src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" class="post-image" alt="post image" />
+                    <div class="card-content">
+                        <h3 id="post-title">How I Shot a Cinematic Short Film Using ONLY Natural Light:</h3>
+                        <p id="post-description">Go behind the scenes of my latest short film and learn how I created a cinematic look using only natural light with simple techniques you can use yourself.</p>
+                    </div>
+                </div>
+
+                <div class="membership-box">
+                    <div class="membership-left">
+                        <h3>Unlock more with memberships</h3>
+                        <a href="membership.html" class="upgrade-btn">Upgrade now</a>
+                    </div>
+                    <div class="membership-right">
+                        <ul>
+                            <li>Get access to exclusive posts</li>
+                            <li>Support your favorite creators</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="website-footer">Developed by the members of Group 14</footer>
+    </div>
+</body>
+<script src="darkMode.js"></script>
+</html>

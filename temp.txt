@@ -1,56 +1,41 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="colors.css" />
-    <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  </head>
+<div class="mobile-header">
+    <div class="dark-mode-toggle">
+        <div class="dark-mode-switch"></div>
+    </div>
+    <a href="" class="mobile-home-btn">Home</a>
+    <a href="searchDAMANI.html" class="mobile-explore-btn">Explore</a>
+    <a href="about.html" class="mobile-about-btn">About</a>
+    <div class="mobile-search-wrapper">
+        <button class="mobile-search-submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input type="text" class="mobile-search" placeholder="find a creator" />
+    </div>
+    <a href="accountDAMANI.html" class="mobile-account-btn">My account</a>
+</div>
 
-  <body>
-    <!--WEBSITE CONTAINER-->
-    <div class="website-container">
-        <!--MOBILE HEADER-->
-        <div class="mobile-header">
-            <div class="dark-mode-toggle">
-                <div class="dark-mode-switch"></div>
-            </div>
-            <a href="" class="mobile-home-btn">Home</a>
-            <a href="searchDAMANI.html" class="mobile-explore-btn">Explore</a>
-            <a href="about.html" class="mobile-about-btn">About</a>
-            <div class="mobile-search-wrapper">
-                <button class="mobile-search-submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <input type="text" class="mobile-search" placeholder="find a creator" />
-            </div>
-            <a href="accountDAMANI.html" class="mobile-account-btn">My account</a>
+<!--SECTION TYPE A-->
+<section class="section-type-a">
+    <div class="section-type-a-content-header-wrapper">
+        <h1 class="section-type-a-content-header">Rediscover your favorite creators.</h1>
+    </div>
+    <div class="section-type-a-content-body-wrapper">
+        <div class="section-type-a-content-body-img-wrapper">
+            <img class= "section-type-a-content-body-img" src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2" />
         </div>
-
-        <!--SECTION TYPE A-->
-        <section class="section-type-a">
-            <div class="section-type-a-content-header-wrapper">
-                <h1 class="section-type-a-content-header">Rediscover your favorite creators.</h1>
-            </div>
-            <div class="section-type-a-content-body-wrapper">
-                <div class="section-type-a-content-body-img-wrapper">
-                    <img class= "section-type-a-content-body-img" src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2" />
+        <div class="section-type-a-content-body-text-wrapper">
+            <h2 class="section-type-a-content-body-text">Join to open a whole new world of content creation.</h2>
+            <div class="section-type-a-content-body-preview">
+                <div class="section-type-a-content-body-preview-account-img-wrapper">
+                        <img class="section-type-a-content-body-preview-account-img" src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2" />
                 </div>
-                <div class="section-type-a-content-body-text-wrapper">
-                    <h2 class="section-type-a-content-body-text">Join to open a whole new world of content creation.</h2>
-                    <div class="section-type-a-content-body-preview">
-                        <div class="section-type-a-content-body-preview-account-img-wrapper">
-                            <img class="section-type-a-content-body-preview-account-img" src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2" />
-                        </div>
-                        <a href=""><div class="section-type-a-content-body-preview-account-name">Echoverse</div></a>
-                    </div>
-                </div>
+                <a href=""><div class="section-type-a-content-body-preview-account-name">Echoverse</div></a>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <!--SECTION TYPE B-->
+<!--SECTION TYPE B-->
         <section class="section-type-b">
             <div class="section-type-b-content-header-wrapper">
                 <h1 class="section-type-b-content-header"><span class="color-text">Monatize</span> youself and build a brand.</h1>
@@ -70,8 +55,7 @@
                 </div>
             </div>
         </section>
-
-        <!--SECTION TYPE C-->
+ <!--SECTION TYPE C-->
         <section class="section-type-c">
             <div class="section-type-c-content-header-wrapper">
                 <h1 class="section-type-c-content-header">Go global with Patreon.</h1>
@@ -92,7 +76,7 @@
             </div>
         </section>
 
-        <!--SECTION TYPE D-->
+ <!--SECTION TYPE D-->
         <section class="section-type-d">
             <div class="section-type-d-content-header-wrapper">
                 <h1 class="section-type-d-content-header">Find exclusive content.</h1>
@@ -114,10 +98,4 @@
                 </div>
             </div>
         </section>
-    </div>
-    <footer class="website-footer">Developed by the members of Group 14</footer>
 
-  </body>
-  <script src="darkMode.js"></script>
-  <script src="searchbarFunction.js"></script>
-</html>
