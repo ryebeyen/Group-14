@@ -15,10 +15,10 @@ body {
     width: 700px;
     border: solid 3px red;
     background: linear-gradient(
-  to bottom right,
-  rgb(220, 216, 209),
-  rgb(198, 194, 186),
-  rgb(174, 169, 160)
+    to bottom right,
+    rgb(220, 216, 209),
+    rgb(198, 194, 186),
+    rgb(174, 169, 160)
 );
 }
 

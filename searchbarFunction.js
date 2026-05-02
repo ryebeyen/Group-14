@@ -9,6 +9,7 @@ const creators = [
   { key: "wordhaven", name: "WordHaven" }
 ];
 
+const inputOverlay = document.querySelector
 const recentCreators = ["frameforge", "pixelbrew"];
 
 /* mobile search */
