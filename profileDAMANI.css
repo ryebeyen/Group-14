@@ -159,10 +159,11 @@ body {
 
 .account-name {
     position: absolute;
-    bottom: 0;
     left: 50%;
+    bottom: -6rem;
+    transform: translateX(-50%);
     font-size: 3vh;
-    transform: translate(-50%, 350%);
+    white-space: nowrap;
 }
 
 .subscribe-btn {
