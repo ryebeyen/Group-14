@@ -128,11 +128,11 @@ body {
 
 .profile-banner {
     position: relative;
-    background-image: url("https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80");
     width: 100%;
     height: 50%;
-    background-position: 30% 50%;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .image-wrapper {
