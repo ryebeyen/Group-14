@@ -102,6 +102,7 @@
     frameforge: {
       name: "Frame Forge",
       avatar: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80",
+      bannerImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80",
       postImage: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80",
       title: "How I Shot a Cinematic Short Film Using ONLY Natural Light:",
       description: "Go behind the scenes of my latest short film and learn how I created a cinematic look using only natural light with simple techniques you can use yourself."
@@ -109,6 +110,7 @@
     pixelbrew: {
       name: "PixelBrew",
       avatar: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500&q=80",
+      bannerImage: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500&q=80",
       postImage: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500&q=80",
       title: "Turning a 0–5 Game into a Clutch Win:",
       description: "Watch how I turned a losing match into an insane comeback with clutch plays, smart positioning, and pure last-second pressure."
@@ -116,6 +118,7 @@
     creator001: {
       name: "Creator001",
       avatar: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=500&q=80",
+      bannerImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=500&q=80",
       postImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=500&q=80",
       title: "Beginner-Friendly Character Sketch:",
       description: "Follow along as I break down my full step-by-step process for creating a clean and expressive character sketch from start to finish."
@@ -123,6 +126,7 @@
     atlascollective: {
       name: "AtlasCollective",
       avatar: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=500&q=80",
+      bannerImage: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=500&q=80",
       postImage: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=500&q=80",
       title: "48 Hours in NYC: Hidden Gems:",
       description: "Explore New York City through my lens as I share underrated spots, local eats, and unique experiences most tourists completely miss."
@@ -130,6 +134,7 @@
     echoverse: {
       name: "Echoverse",
       avatar: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=500&q=80",
+      bannerImage: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=500&q=80",
       postImage: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=500&q=80",
       title: "The Night the Sky Went Silent (Episode 1):",
       description: "The story begins as a quiet town experiences a strange, unexplained silence in the sky, setting off a chain of mysterious events."
@@ -137,6 +142,7 @@
     urbanflux: {
       name: "UrbanFlux",
       avatar: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=80",
+      bannerImage: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=80",
       postImage: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=80",
       title: "Street Style Breakdown: What’s Trending:",
       description: "A look at the latest streetwear trends, fits, and styles dominating the city and how to pull them off yourself."
@@ -144,6 +150,7 @@
     motiondistrict: {
       name: "MotionDistrict",
       avatar: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=500&q=80",
+      bannerImage: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=500&q=80",
       postImage: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=500&q=80",
       title: "5 Cinematic Transitions That Instantly Upgrade Your Edits:",
       description: "Learn five clean, professional transitions you can use to make your videos look more cinematic and polished instantly."
@@ -151,6 +158,7 @@
     wordhaven: {
       name: "WordHaven",
       avatar: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=500&q=80",
+      bannerImage: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=500&q=80",
       postImage: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=500&q=80",
       title: "A Short Piece on Love, Loss, and Letting Go:",
       description: "A heartfelt short piece exploring the emotions of love, loss, and the quiet strength it takes to let go."
@@ -162,6 +170,7 @@
   const creator = creatorData[creatorKey] || creatorData.frameforge;
 
   document.querySelector(".profile-image").src = creator.avatar;
+  document.querySelector(".profile-banner").style.backgroundImage = `url("${creator.bannerImage}")`;
   document.querySelector(".account-name").textContent = creator.name;
 
   document.querySelectorAll(".creator-row .avatar").forEach((img) => {
