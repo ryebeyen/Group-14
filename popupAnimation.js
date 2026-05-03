@@ -74,4 +74,4 @@ const popupClose = document.getElementById("popupClose");
       }
     });
 
-    popupClose.addEventListener("click", hidePopup());
+    popupClose.addEventListener("click", hidePopup);
