@@ -24,14 +24,54 @@ const Search = (() => {
   async function fetchData(query) {    
 
     const ACCOUNT_DATA = [
-      { title: "frameforge", category: "add later"    },
-      { title: "pixelbrew", category: "add later"    },
-      { title: "creator001", category: "add later" },
-      { title: "atlascollective", category: "add later"  },
-      { title: "echoverse", category: "add later"    },
-      { title: "urbanflux", category: "add later"    },
-      { title: "motiondistrict", category: "add later" },
-      { title: "wordhaven", category: "add later"    },
+      {
+        key: "frameforge",
+        title: "FrameForge",
+        category: "film",
+        href: "profileDAMANI.html?creator=frameforge"
+      },
+      {
+        key: "pixelbrew",
+        title: "PixelBrew",
+        category: "music",
+        href: "profileDAMANI.html?creator=pixelbrew"
+      },
+      {
+        key: "creator001",
+        title: "Creator001",
+        category: "art",
+        href: "profileDAMANI.html?creator=creator001"
+      },
+      {
+        key: "atlascollective",
+        title: "AtlasCollective",
+        category: "travel",
+        href: "profileDAMANI.html?creator=atlascollective"
+      },
+      {
+        key: "echoverse",
+        title: "Echoverse",
+        category: "film",
+        href: "profileDAMANI.html?creator=echoverse"
+      },
+      {
+        key: "urbanflux",
+        title: "UrbanFlux",
+        category: "fashion",
+        href: "profileDAMANI.html?creator=urbanflux"
+      },
+      {
+        key: "motiondistrict",
+        title: "MotionDistrict",
+        category: "film",
+        href: "profileDAMANI.html?creator=motiondistrict"
+      },
+      {
+        key: "wordhaven",
+        title: "WordHaven",
+        category: "art",
+        href: "profileDAMANI.html?creator=wordhaven"
+      }
     ];
 
     const q = query.toLowerCase();
@@ -166,7 +206,7 @@ const Search = (() => {
         for (const item of items) {
           html += `
             <li class="search-overlay__item" role="option" tabindex="-1">
-              <a class="search-overlay__link" href="profileDAMANI.html">
+              <a class="search-overlay__link" href="${item.href}">
                 <span class="search-overlay__title">${highlight(item.title, query)}</span>
               </a>
             </li>`;
