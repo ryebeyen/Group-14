@@ -1,135 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="colors.css" />
     <link rel="stylesheet" href="searchDAMANI.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
-<body>
+  <body>
     <!--WEBSITE CONTAINER-->
     <div class="website-container">
-    <div class="header-filter-wrapper">
+      <div class="header-filter-wrapper">
         <!--HEADER-->
         <div class="mobile-header">
-            <div class="dark-mode-toggle">
-                <div class="dark-mode-switch"></div>
-            </div>
-            <a href="home.html" class="mobile-home-btn">Home</a>
-            <a href="searchDAMANI.html" class="mobile-explore-btn">Explore</a>
-            <a href="about.html" class="mobile-about-btn">About</a>
-            <div class="mobile-search-wrapper">
-                <button class="mobile-search-submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <input type="text" class="mobile-search" placeholder="find a creator" />
-            </div>
-            <a href="accountDAMANI.html" class="mobile-account-btn">My account</a>
+          <div class="dark-mode-toggle">
+            <div class="dark-mode-switch"></div>
+          </div>
+          <a href="home.html" class="mobile-home-btn">Home</a>
+          <a href="searchDAMANI.html" class="mobile-explore-btn">Explore</a>
+          <a href="about.html" class="mobile-about-btn">About</a>
+          <div class="mobile-search-wrapper">
+            <button class="mobile-search-submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input
+              type="text"
+              class="mobile-search"
+              placeholder="find a creator"
+            />
+          </div>
+          <a href="accountDAMANI.html" class="mobile-account-btn">My account</a>
         </div>
 
         <!--INSERT FILTER-->
         <div class="filter-bar">
-            <button data-filter="all" class="filter-btn">All</button>
-            <button data-filter="travel" class="filter-btn">Travel</button>
-            <button data-filter="music" class="filter-btn">Music</button>
-            <button data-filter="fashion" class="filter-btn">Fashion</button>
-            <button data-filter="anime" class="filter-btn">Anime</button>
-            <button data-filter="art" class="filter-btn">Art</button>
-            <button data-filter="film" class="filter-btn">Film</button>
+          <button data-filter="all" class="filter-btn">All</button>
+          <button data-filter="travel" class="filter-btn">Travel</button>
+          <button data-filter="music" class="filter-btn">Music</button>
+          <button data-filter="fashion" class="filter-btn">Fashion</button>
+          <button data-filter="anime" class="filter-btn">Anime</button>
+          <button data-filter="art" class="filter-btn">Art</button>
+          <button data-filter="film" class="filter-btn">Film</button>
         </div>
-    </div>
-    
-    <!--MAIN CONTENT-->
-    <main class="website-home">
+      </div>
+
+      <!--MAIN CONTENT-->
+      <main class="website-home">
         <h2 class="recommended-content-header">Recommended</h2>
         <!--RECOMMENDED CONTENT GRID-->
         <section class="content-grid-type-A">
-            <div class="card-type-A">
-                <a href="profileDAMANI.html" class="search-link-type-A" data-category="film">
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="FrameForge" class="card-image-type-A"/>
-                    <h4 class="card-title">FrameForge</h4>
-                    <p class="card-genere">Short Films</p>
-                </a>
-            </div>
-            <div class="card-type-A">
-                <a href="profileDAMANI.html" class="search-link-type-A" data-category="music">
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="FrameForge" class="card-image-type-A"/>
-                    <h4 class="card-title">FrameForge</h4>
-                    <p class="card-genere">Short Films</p>
-                </a>
-            </div>
-            <div class="card-type-A">
-                <a href="profileDAMANI.html" class="search-link-type-A" data-category="art">
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="FrameForge" class="card-image-type-A"/>
-                    <h4 class="card-title">FrameForge</h4>
-                    <p class="card-genere">Short Films</p>
-                </a>
-            </div>
-            <div class="card-type-A">
-                <a href="profileDAMANI.html" class="search-link-type-A" data-category="art">
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="FrameForge" class="card-image-type-A"/>
-                    <h4 class="card-title">FrameForge</h4>
-                    <p class="card-genere">Short Films</p>
-                </a>
-            </div>
+          <div class="card-type-A">
+            <a
+              href="profileDAMANI.html?creator=frameforge"
+              class="search-link-type-A"
+              data-category="film"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80"
+                alt="FrameForge"
+                class="card-image-type-A"
+              />
+              <h4 class="card-title">FrameForge</h4>
+              <p class="card-genere">Short Films</p>
+            </a>
+          </div>
+
+          <div class="card-type-A">
+            <a
+              href="profileDAMANI.html?creator=echoverse"
+              class="search-link-type-A"
+              data-category="music"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=500&q=80"
+                alt="echoverse"
+                class="card-image-type-A"
+              />
+              <h4 class="card-title">EchoVerse</h4>
+              <p class="card-genere">Music</p>
+            </a>
+          </div>
+
+          <div class="card-type-A">
+            <a
+              href="profileDAMANI.html?creator=motiondistrict"
+              class="search-link-type-A"
+              data-category="art"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=500&q=80"
+                alt="motiondistrict"
+                class="card-image-type-A"
+              />
+              <h4 class="card-title">MotionDistrict</h4>
+              <p class="card-genere">Short Films</p>
+            </a>
+          </div>
+
+          <div class="card-type-A">
+            <a
+              href="profileDAMANI.html?creator=atlascollective"
+              class="search-link-type-A"
+              data-category="travel"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=500&q=80"
+                alt="atlascollective"
+                class="card-image-type-A"
+              />
+              <h4 class="card-title">AtlasCollective</h4>
+              <p class="card-genere">Travel</p>
+            </a>
+          </div>
         </section>
         <!--NEW CONTENT GRID-->
         <h2 class="new-content-header">New Content</h2>
         <section class="content-grid-type-B">
-            <div class="ard-type-B">
-            <a href="profileDAMANI.html" class="search-link-type-B" data-category="art">
-                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="FrameForge" class="card-image-type-B"/>
-                <h4 class="card-title">FrameForge</h4>
-                <p class="card-genere">Short Films</p>
+          <div class="ard-type-B">
+            <a
+              href="profileDAMANI.html?creator=urbanflux"
+              class="search-link-type-B"
+              data-category="fashion"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=80"
+                alt="FrameForge"
+                class="card-image-type-B"
+              />
+              <h4 class="card-title">UrbanFlux</h4>
+              <p class="card-genere">Fashion</p>
             </a>
-            </div>
-            <div class="card-type-B">
-            <a href="profileDAMANI.html" class="search-link-type-B" data-category="film">
-                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="FrameForge" class="card-image-type-B"/>
-                <h4 class="card-title">FrameForge</h4>
-                <p class="card-genere">Short Films</p>
+          </div>
+
+          <div class="card-type-B">
+            <a
+              href="profileDAMANI.html"
+              class="search-link-type-B"
+              data-category="film"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80"
+                alt="FrameForge"
+                class="card-image-type-B"
+              />
+              <h4 class="card-title">FrameForge</h4>
+              <p class="card-genere">Short Films</p>
             </a>
-            </div>
+          </div>
         </section>
         <h2 class="recommended-content-header">Popular this Week</h2>
         <!--Popular this Week-->
         <section class="content-grid-type-A">
-            <div class="card-type-A">
-                <a href="profileDAMANI.html" class="search-link-type-A" data-category="art">
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="FrameForge" class="card-image-type-A"/>
-                    <h4 class="card-title">FrameForge</h4>
-                    <p class="card-genere">Short Films</p>
-                </a>
-            </div>
-            <div class="card-type-A">
-                <a href="profileDAMANI.html" class="search-link-type-A" data-category="film">
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="FrameForge" class="card-image-type-A"/>
-                    <h4 class="card-title">FrameForge</h4>
-                    <p class="card-genere">Short Films</p>
-                </a>
-            </div>
-            <div class="card-type-A">
-                <a href="profileDAMANI.html" class="search-link-type-A"data-category="music">
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="FrameForge" class="card-image-type-A"/>
-                    <h4 class="card-title">FrameForge</h4>
-                    <p class="card-genere">Short Films</p>
-                </a>
-            </div>
-            <div class="card-type-A">
-                <a href="profileDAMANI.html" class="search-link-type-A" data-category="fashion">
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="FrameForge" class="card-image-type-A"/>
-                    <h4 class="card-title">FrameForge</h4>
-                    <p class="card-genere">Short Films</p>
-                </a>
-            </div>
+          <div class="card-type-A">
+            <a
+              href="profileDAMANI.html?creator=motiondistrict"
+              class="search-link-type-A"
+              data-category="film"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=500&q=80"
+                alt="motiondistrict"
+                class="card-image-type-A"
+              />
+              <h4 class="card-title">MotionDistrict</h4>
+              <p class="card-genere">Short Films</p>
+            </a>
+          </div>
+          <div class="card-type-A">
+            <a
+              href="profileDAMANI.html?creator=atlascollective"
+              class="search-link-type-A"
+              data-category="travel"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=500&q=80"
+                alt="atlascollective"
+                class="card-image-type-A"
+              />
+              <h4 class="card-title">AtlasCollective</h4>
+              <p class="card-genere">Travel</p>
+            </a>
+          </div>
+          <div class="card-type-A">
+            <a
+              href="profileDAMANI.html"
+              class="search-link-type-A"
+              data-category=""
+            >
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+                alt="template"
+                class="card-image-type-A"
+              />
+              <h4 class="card-title">Morning Glory</h4>
+              <p class="card-genere">Leisure</p>
+            </a>
+          </div>
+          <div class="card-type-A">
+            <a
+              href="profileDAMANI.html"
+              class="search-link-type-A"
+              data-category="fashion"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80"
+                alt="FrameForge"
+                class="card-image-type-A"
+              />
+              <h4 class="card-title">FrameForge</h4>
+              <p class="card-genere">Short Films</p>
+            </a>
+          </div>
         </section>
-    </main>
-    <footer class="website-footer">Developed by the members of Group 14</footer>
+      </main>
+      <footer class="website-footer">
+        Developed by the members of Group 14
+      </footer>
     </div>
-</body>
-<script src="darkMode.js"></script>
-<script src="searchbar.js"></script>
-<script src="filterBar.js"></script>
+  </body>
+  <script src="darkMode.js"></script>
+  <script src="searchbar.js"></script>
+  <script src="filterBar.js"></script>
 </html>
